@@ -22,7 +22,7 @@ body {
 .nav-item a {
   text-decoration: none;
   font-size: 1.25rem;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.03rem;
   color: white;
   transition: 0.3s;
 }
@@ -59,15 +59,56 @@ body {
 main {
   background-color: #c7a17a;
   position: relative;
-  height: 100vh;
+  height: 700px;
+  overflow: hidden;
 }
-
-.image {
-  height: 300px;
-  width: 300px;
+main .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
-.image img {
-  width: 100%;
-  height: 100%;
+.content {
+  padding-top: 8rem;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+.content-1 {
+  padding-top: 4rem;
+  color: #352208;
+}
+.content h1 {
+  font-size: 60px;
+  text-transform: capitalize;
+  white-space: nowrap;
+  line-height: 72px;
+  margin-bottom: 1.5rem;
+}
+.content p {
+  font-size: 23px;
+  line-height: 30px;
+}
+.content .image {
+  transform: rotate(18deg);
+}
+.content .image img {
   object-fit: cover;
+}
+.btn {
+  border-color: #3e7915;
+  font-family: 'Roboto', sans-serif;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  margin-top: 3rem;
+  letter-spacing: 0.03rem;
+  background-color: #3e7915;
+  color: rgb(248, 241, 227);
+  font-weight: 400;
+  transition: 0.3s all linear;
+}
+.btn:first-of-type {
+  margin-right: 2rem;
+}
+.btn:hover {
+  background-color: #4d941a;
+  border-color: #4d941a;
 }
