@@ -1,114 +1,162 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  /* background: url('../images/witewall_3_@2X.png') repeat fixed center; */
+    font-family: 'Roboto', sans-serif;
+    /* background: url('../images/witewall_3_@2X.png') repeat fixed center; */
 }
 
 .container-nav {
-  max-width: 1670px;
-  z-index: 1;
+    background: rgba(255, 255, 255, 0.05);
+    max-width: 1670px;
+    z-index: 1;
 }
 
 .navbar-nav li {
-  padding: 5px;
-  margin: 0 10px;
+    padding: 5px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.navbar-nav li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #498d18;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.navbar-nav li:hover::after {
+    width: 100%;
 }
 
 .nav-item a {
-  text-decoration: none;
-  font-size: 1.25rem;
-  letter-spacing: 0.03rem;
-  color: white;
-  transition: 0.3s;
+    text-decoration: none;
+    font-size: 1.25rem;
+    letter-spacing: 0.03rem;
+    color: white;
+    transition: 0.3s;
 }
 
 .nav-item a:hover {
-  color: darkorange;
+    color: #fff;
 }
 
 .call-back a {
-  text-decoration: none;
-  font-size: 1.1em;
-  color: white;
-  transition: 0.3s;
-  background: transparent;
-  border: 1px solid white;
-  padding: 7px 8px 9px 8px;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: white;
+    transition: 0.3s;
+    background: transparent;
+    border: 1px solid white;
+    padding: 7px 8px 9px 8px;
 }
 
 .call-back a:hover {
-  font-size: 1.1em;
-  color: #fff;
+    font-size: 1.1em;
+    color: white;
+    background: #4d941a;
+    border: 1px solid #4d941a;
 }
 
 .search-cart {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.search-cart > ul > li {
-  margin-right: 15px;
-  padding: 5px;
+.search-cart>ul>li {
+    margin-right: 15px;
+    padding: 5px;
 }
 
 main {
-  background-color: #c7a17a;
-  position: relative;
-  height: 700px;
-  overflow: hidden;
+    background-color: #c7a17a;
+    position: relative;
+    height: 700px;
+    overflow: hidden;
 }
+
 main .wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
+
 .content {
-  padding-top: 8rem;
-  font-family: 'Playfair Display', serif;
-  text-align: center;
+    padding-top: 8rem;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
 }
+
 .content-1 {
-  padding-top: 4rem;
-  color: #352208;
+    padding-top: 4rem;
+    color: #352208;
 }
+
 .content h1 {
-  font-size: 60px;
-  text-transform: capitalize;
-  white-space: nowrap;
-  line-height: 72px;
-  margin-bottom: 1.5rem;
+    font-size: 60px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    line-height: 72px;
+    margin-bottom: 1.5rem;
 }
+
 .content p {
-  font-size: 23px;
-  line-height: 30px;
+    font-size: 23px;
+    line-height: 30px;
 }
+
 .content .image {
-  transform: rotate(18deg);
+    transform: rotate(18deg);
 }
+
 .content .image img {
-  object-fit: cover;
+    object-fit: cover;
 }
-.btn {
-  border-color: #3e7915;
-  font-family: 'Roboto', sans-serif;
-  padding: 0.8rem 2rem;
-  font-size: 1.1rem;
-  margin-top: 3rem;
-  letter-spacing: 0.03rem;
-  background-color: #3e7915;
-  color: rgb(248, 241, 227);
-  font-weight: 400;
-  transition: 0.3s all linear;
+
+.home-button {
+    border: 2px solid #3e7915;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    margin-top: 3rem;
+    letter-spacing: 0.03rem;
+    background-color: #3e7915;
+    color: rgb(248, 241, 227);
+    font-weight: 400;
+    transition: 0.3s all linear;
+    border-radius: 25px;
 }
-.btn:first-of-type {
-  margin-right: 2rem;
+
+.home-button:first-of-type {
+    margin-right: 2rem;
 }
-.btn:hover {
-  background-color: #4d941a;
-  border-color: #4d941a;
+
+.home-button:hover {
+    background-color: #4d941a;
+    border-color: #4d941a;
+}
+
+@media screen and (min-width:500px) {
+     ::-webkit-scrollbar {
+        width: 8px;
+    }
+    /* Track */
+     ::-webkit-scrollbar-track {
+        background: #555;
+    }
+    /* Handle */
+     ::-webkit-scrollbar-thumb {
+        background: #111;
+    }
+    /* Handle on hover */
+     ::-webkit-scrollbar-thumb:hover {
+        background: #333;
+    }
 }
