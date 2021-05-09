@@ -227,13 +227,30 @@ body {
 .container-contact {
     background-color: #c7a17a;
     position: relative;
-    overflow: hidden;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
 }
 
 .contact-main {
-    height: 320px;
+    height: 420px;
+}
+
+.shape-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.shape-divider svg {
+    position: relative;
+    display: block;
+    width: calc(138% + 1.3px);
+    height: 109px;
+}
+
+.shape-divider .shape-fill {
+    fill: #FFFFFF;
 }
 
 .contact-1 {
@@ -326,7 +343,6 @@ body {
 
 .contact-box p .phone:hover {
     color: #7c644c;
-    text-decoration: none;
 }
 
 .contact-box p .mail {
@@ -338,7 +354,34 @@ body {
 
 .contact-box p .mail:hover {
     color: #7c644c;
-    text-decoration: none;
+}
+
+.contact-3 {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 3.5em;
+}
+
+.contact-3 .form {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-3 .form img {
+    width: 250px;
+}
+
+.contact-3 .form-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-inner input {
+    outline: none;
+    padding: 6px;
+    margin-bottom: 1.3em;
+    border-radius: 12px;
+    width: 50%;
 }
 
 @media screen and (min-width:500px) {
