@@ -142,46 +142,50 @@
                 <p class="text-center">По интересующим вопросам логистики, участия в выставках, предложениях о сотрудничестве Вы можете связаться напрямую через форму ниже. Ответ поступит в течении 10-15 минут.</p>
                 <!-- Form Name Input -->
                 <div class="form-div">
-                    <div class="form-name-div form-element">
+                    <div class="form-name-div form-element name-form">
                         <div class="img-div">
                             <i class="fas fa-user"></i>
                         </div>
                         <div class="input-div">
-                            <input class="border-0" type="text" placeholder="Ваше имя" required>
+                            <input id="name-input" class="border-0" type="text" placeholder="Ваше имя">
                         </div>
                     </div>
                     <!-- Form Number Input -->
-                    <div class="form-number-div form-element">
+                    <div class="form-number-div form-element number-form">
                         <div class="img-div ms-1">
                             <i class="fas fa-mobile-alt"></i>
                         </div>
                         <div class="input-div">
-                            <input class="border-0" type="number" placeholder="введите номер телефона" required>
+                            <input id="number-input" class="border-0" type="number" placeholder="Введите номер телефона">
                         </div>
                     </div>
                     <!-- Form Email Input -->
-                    <div class="form-email-div form-element">
+                    <div class="form-email-div form-element email-form">
                         <div class="img-div">
                             <i class="far fa-envelope"></i>
                         </div>
                         <div class="input-div">
-                            <input class=" border-0" type="email" placeholder="введите ваш email" required>
+                            <input id="email-input" class="border-0" type="email" placeholder="Введите ваш email">
                         </div>
                     </div>
                     <!-- Form Message TextArea -->
-                    <div class="form-message-div form-element">
+                    <div class="form-message-div form-element message-form">
                         <div class="textarea-img img-div">
                             <i class="far fa-list-alt"></i>
                         </div>
                         <div class="message-textarea-div">
-                            <textarea placeholder="ваш запрос или предложение" required></textarea>
+                            <textarea id="message-textarea" class="mt-2 ms-1" placeholder="Ваш запрос или предложение" require></textarea>
                         </div>
                     </div>
-                    <button type="submit" class="btn-form">Отправить</button>
+                    <button id="send-button" type="button" class="btn-form">Отправить</button>
             </form>
             </div>
         </div>
     </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
