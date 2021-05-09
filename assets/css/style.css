@@ -389,12 +389,13 @@ body {
     width: 60%;
     border: 1px solid #c7a17a;
     margin-bottom: 10px;
+    border-radius: 8px;
 }
 
 .form-inner .form-element input {
     outline: none;
     padding: 6px;
-    border-radius: 12px;
+    border-radius: 8px;
     width: 100%;
 }
 
@@ -435,6 +436,7 @@ body {
     text-decoration: none;
     border: none;
     resize: none;
+    border-radius: 8px;
 }
 
 .btn-form {
