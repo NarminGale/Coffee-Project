@@ -357,7 +357,7 @@ body {
 }
 
 .contact-3 {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 3.5em;
 }
@@ -368,12 +368,19 @@ body {
 }
 
 .contact-3 .form img {
-    width: 250px;
+    width: 34%;
 }
 
 .contact-3 .form-inner {
     display: flex;
     flex-direction: column;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-inner .form-element {
