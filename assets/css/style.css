@@ -153,14 +153,14 @@ body {
     padding: 5px;
 }
 
-main {
+.container-home {
     background-color: #c7a17a;
     position: relative;
     height: 700px;
     overflow: hidden;
 }
 
-main .wave {
+.container-home .wave {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -180,7 +180,7 @@ main .wave {
 .content h1 {
     font-size: 60px;
     text-transform: capitalize;
-    white-space: nowrap;
+    white-space: pre-wrap;
     line-height: 72px;
     margin-bottom: 1.5rem;
 }
@@ -219,6 +219,37 @@ main .wave {
 .home-button:hover {
     background-color: #4d941a;
     border-color: #4d941a;
+}
+
+
+/* Contact */
+
+.container-contact {
+    background-color: #c7a17a;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-main {
+    width: 70%;
+    margin: 0 auto;
+    height: 300px;
+}
+
+.contact-1 {
+    padding-top: 4rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.contact-1 h1 {
+    display: inline;
+    font-size: 50px;
+    text-transform: capitalize;
+    white-space: pre-wrap;
+    line-height: 72px;
+    margin-bottom: 2.5rem;
+    border-bottom: 3px solid#498d18;
 }
 
 @media screen and (min-width:500px) {
