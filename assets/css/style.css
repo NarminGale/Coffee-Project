@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
     /* background: url('../images/witewall_3_@2X.png') repeat fixed center; */
 }
 
@@ -219,6 +220,11 @@ body {
 .home-button:hover {
     background-color: #4d941a;
     border-color: #4d941a;
+}
+
+.about-us {
+    margin-top: 2rem;
+    padding: 2.5rem;
 }
 
 
