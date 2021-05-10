@@ -16,6 +16,15 @@ body {
     z-index: 1;
 }
 
+.nav-panel1 {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-panel2 {
+    justify-content: start;
+}
+
 .logo {
     margin-left: 1.3em;
     width: 150px;
@@ -60,37 +69,34 @@ body {
     color: #fff;
 }
 
-.btn-custom {
-    width: 180px;
-    height: 40px;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-family: "Lato", sans-serif;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-    outline: none;
-}
-
 .btn-call {
     margin-top: 20px;
     position: relative;
-    right: 20px;
-    bottom: 20px;
     border: none;
     box-shadow: none;
-    width: 180px;
-    height: 40px;
-    line-height: 42px;
-    -webkit-perspective: 230px;
-    perspective: 230px;
+    width: 200px;
 }
 
+.call-back a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: white;
+    transition: 0.3s;
+    background: transparent;
+    border: 1px solid white;
+    padding: 7px 8px 9px 8px;
+    border-radius: 4px;
+}
+
+.call-back a:hover {
+    font-size: 1.1em;
+    color: white;
+    background: #4d941a;
+    border: 1px solid #4d941a;
+}
+
+
+/*
 .btn-call span {
     color: rgb(248, 241, 227);
     background: linear-gradient( 0deg, rgba(77, 148, 26, 1) 0%, rgb(66, 126, 24) 100%);
@@ -98,7 +104,7 @@ body {
     position: absolute;
     width: 180px;
     height: 40px;
-    /* box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1); */
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
     border-radius: 5px;
     text-align: center;
     -webkit-transition: all 0.3s;
@@ -134,25 +140,6 @@ body {
     -webkit-transform: rotateX(-90deg);
     -moz-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
-}
-
-
-/* .call-back a {
-    text-decoration: none;
-    font-size: 1.1em;
-    color: white;
-    transition: 0.3s;
-    background: transparent;
-    border: 1px solid white;
-    padding: 7px 8px 9px 8px;
-    border-radius: 4px;
-}
-
-.call-back a:hover {
-    font-size: 1.1em;
-    color: white;
-    background: #4d941a;
-    border: 1px solid #4d941a;
 } */
 
 .search-cart {
@@ -164,6 +151,9 @@ body {
     margin-right: 15px;
     padding: 5px;
 }
+
+
+/* ==================================== */
 
 .container-home {
     background-color: #c7a17a;
@@ -503,7 +493,7 @@ body {
 }
 
 .contact-3 .form img {
-    width: 34%;
+    width: 55vh;
 }
 
 .contact-3 .form-inner {
@@ -596,9 +586,9 @@ body {
     justify-content: start;
 }
 
-.contact-rekvizit {
+.contact-map {
     padding-top: 3rem;
-    font-family: "Playfair Display", serif;
+    font-family: "Rubik", serif;
     text-align: center;
 }
 
@@ -611,6 +601,25 @@ body {
     white-space: pre-wrap;
     line-height: 72px;
     margin-bottom: 2.5rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 4px solid#498d18;
+}
+
+.contact-map p {
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.contact-rekvizit h1 {
+    display: inline;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: capitalize;
+    white-space: pre-wrap;
+    line-height: 72px;
+    margin-bottom: 2.5rem;
+    padding-bottom: 0.4rem;
     border-bottom: 4px solid#498d18;
 }
 
@@ -667,12 +676,39 @@ footer ul {
     padding-left: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
+    .nav-panel {
+        justify-content: start;
+    }
     .form-inner .form-element {
         width: 90%;
     }
     .contact-3 .form img {
         width: 38vh;
+    }
+    .btn-custom {
+        width: 180px;
+        height: 40px;
+        border-radius: 5px;
+        padding: 10px 25px;
+        position: relative;
+        display: inline-block;
+    }
+    .btn-call {
+        margin-top: 20px;
+        position: relative;
+        right: 20px;
+        bottom: 150px;
+        width: 180px;
+        height: 40px;
+    }
+    .btn-call span {
+        display: block;
+        position: absolute;
+        width: 180px;
+        height: 40px;
+        border-radius: 5px;
+        text-align: center;
     }
 }
 
