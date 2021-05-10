@@ -29,6 +29,10 @@ $('.common-input').keyup(function(e) {
     } else if ($(this).is('#message-textarea')) {
         check('#message-textarea', '.message-form');
     }
+
+    if ($('#name-input').val().trim() != '' && $('#number-input').val().trim() != '' && $('#email-input').val().trim() != '' && $('#message-textarea').val().trim() != ''){
+        $('.warning-div').remove();
+    }
 });
 
 function check(input, form) {
