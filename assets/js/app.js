@@ -24,9 +24,11 @@ $('#send-button').on('click',function(){
 });
 
 function wrongCase(elem) { 
-    elem.css('border','1px solid #f00');
+    elem.css('border','2px solid #f00');
 }
 
 function correctCase() { 
     $('.form-element').css('border','1px solid #c7a17a');
 }
+
+<i class="fas fa-exclamation-triangle"></i>

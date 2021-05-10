@@ -461,6 +461,12 @@ body {
     color: #111;
 }
 
+.warning-div{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+}
+
 @media screen and (min-width:500px) {
      ::-webkit-scrollbar {
         width: 8px;
