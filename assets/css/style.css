@@ -539,6 +539,28 @@ body {
   display: flex;
   justify-content: start;
 }
+.contact-4 h1 {
+  display: inline;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 40px;
+  text-transform: capitalize;
+  white-space: pre-wrap;
+  line-height: 72px;
+  margin-bottom: 2.5rem;
+  border-bottom: 4px solid#498d18;
+}
+
+/* About  */
+footer {
+  background-color: #caa681;
+  width: 100%;
+}
+footer > img {
+  width: 100px;
+  height: 10px;
+}
 
 @media screen and (min-width: 500px) {
   ::-webkit-scrollbar {
@@ -556,14 +578,4 @@ body {
   ::-webkit-scrollbar-thumb:hover {
     background: #333;
   }
-}
-
-/* About  */
-footer {
-  background-color: #caa681;
-  width: 100%;
-}
-footer > img {
-  width: 100px;
-  height: 10px;
 }
