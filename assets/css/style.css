@@ -532,6 +532,12 @@ body {
     justify-content: start;
 }
 
+.contact-rekvizit {
+    padding-top: 3rem;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
 .contact-4 h1 {
     display: inline;
     text-align: center;
