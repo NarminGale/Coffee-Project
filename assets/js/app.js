@@ -2,7 +2,7 @@ var name = '';
 var number = '';
 var email = '';
 var message = '';
-$('#send-button').on('click', function() {
+$('#send-button').on('click', function () {
     name = $('#name-input').val();
     number = $('#number-input').val();
     email = $('#email-input').val();
@@ -19,7 +19,7 @@ $('#send-button').on('click', function() {
         correctCase();
     }
 });
-$('.common-input').keyup(function(e) {
+$('.common-input').keyup(function (e) {
     if ($(this).is('#name-input')) {
         check('#name-input', '.name-form');
     } else if ($(this).is('#number-input')) {
@@ -28,6 +28,10 @@ $('.common-input').keyup(function(e) {
         check('#email-input', '.email-form');
     } else if ($(this).is('#message-textarea')) {
         check('#message-textarea', '.message-form');
+    }
+
+    if ($('#name-input').val().trim() != '' && $('#number-input').val().trim() != '' && $('#email-input').val().trim() != '' && $('#message-textarea').val().trim() != '') {
+        $('.warning-div').remove();
     }
 });
 
