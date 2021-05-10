@@ -1,23 +1,20 @@
-$('#send-button').on('click', function() {
-    var name = $('#name-input').val();
-    var number = $('#number-input').val();
-    var email = $('#email-input').val();
-    var message = $('#message-textarea').val();
+var name = '';
+var number = '';
+var email = '';
+var message = '';
+
+$('#send-button').on('click', function () {
+    name = $('#name-input').val();
+    number = $('#number-input').val();
+    email = $('#email-input').val();
+    message = $('#message-textarea').val();
     if (name.trim() == '' || number.trim() == '' || email.trim() == '' || message.trim() == '') {
         correctCase();
 
-        if (name.trim() == '') {
-            wrongCase('.name-form');
-        }
-        if (number.trim() == '') {
-            wrongCase('.number-form');
-        }
-        if (email.trim() == '') {
-            wrongCase('.email-form');
-        }
-        if (message.trim() == '') {
-            wrongCase('.message-form');
-        }
+        check('#name-input', '.name-form');
+        check('#number-input', '.number-form');
+        check('#email-input', '.email-form');
+        check('#message-textarea', '.message-form');
 
         $('<div class="warning-div"></div>').insertBefore("#send-button");
         $('.warning-div').append(`<p class="warning-p text-danger"><i class="me-2 fas fa-exclamation-triangle"></i>Пожалуйста, заполните все поля.</p>`);
@@ -27,9 +24,27 @@ $('#send-button').on('click', function() {
     }
 });
 
-function wrongCase(elem) {
-    $(`${elem}`).css('border', '2px solid #f00');
-    $(`${elem} i`).css('color', '#F00');
+$('.common-input').keyup(function (e) {
+    if ($(this).is('#name-input')) {
+        check('#name-input', '.name-form');
+    } else if ($(this).is('#number-input')) {
+        check('#number-input', '.number-form');
+    } else if ($(this).is('#email-input')) {
+        check('#email-input', '.email-form');
+    } else if ($(this).is('#message-textarea')) {
+        check('#message-textarea', '.message-form');
+    }
+});
+
+function check(input, form) {
+    var value = $(`${input}`).val();
+    if (value.trim() == '') {
+        $(`${form}`).css('border', '2px solid #f00');
+        $(`${form} i`).css('color', '#f00');
+    } else {
+        $(`${form}`).css('border', '1px solid #c7a17a')
+        $(`${form} i`).css('color', '#000');
+    }
 }
 
 function correctCase() {
