@@ -58,3 +58,10 @@ $('.about-icon').on('click',function(){
     $('.carousel-item').removeClass('active');
     $(`#item-${id}`).addClass('active');
 });
+
+$('.carousel').on('slid.bs.carousel', function(){
+    var element_id = $('.carousel-item.active').attr('id');
+    var id = parseInt(element_id[element_id.length-1]);
+    console.log(id);
+    console.log($(`.icon-${id}`).css('background'));
+});
