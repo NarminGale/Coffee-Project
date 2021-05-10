@@ -2,29 +2,24 @@ var name = '';
 var number = '';
 var email = '';
 var message = '';
-
-$('#send-button').on('click', function () {
+$('#send-button').on('click', function() {
     name = $('#name-input').val();
     number = $('#number-input').val();
     email = $('#email-input').val();
     message = $('#message-textarea').val();
     if (name.trim() == '' || number.trim() == '' || email.trim() == '' || message.trim() == '') {
         correctCase();
-
         check('#name-input', '.name-form');
         check('#number-input', '.number-form');
         check('#email-input', '.email-form');
         check('#message-textarea', '.message-form');
-
         $('<div class="warning-div"></div>').insertBefore("#send-button");
         $('.warning-div').append(`<p class="warning-p text-danger"><i class="me-2 fas fa-exclamation-triangle"></i>Пожалуйста, заполните все поля.</p>`);
-
     } else {
         correctCase();
     }
 });
-
-$('.common-input').keyup(function (e) {
+$('.common-input').keyup(function(e) {
     if ($(this).is('#name-input')) {
         check('#name-input', '.name-form');
     } else if ($(this).is('#number-input')) {
