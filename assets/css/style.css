@@ -16,6 +16,17 @@ body {
     z-index: 1;
 }
 
+.logo {
+    margin-left: 1.3em;
+    width: 150px;
+    height: 100px;
+}
+
+.logo a img {
+    height: 100%;
+    width: 100%;
+}
+
 .navbar-nav li {
     padding: 5px;
     margin: 0 10px;
@@ -225,6 +236,60 @@ body {
 .about-us {
     margin-top: 2rem;
     padding: 2.5rem;
+    background: linear-gradient(0deg, rgb(255, 255, 255), rgb(199, 161, 122) 15%, rgb(255, 255, 255));
+    /* background: radial-gradient(rgb(199, 161, 122), rgb(255, 255, 255) 70%); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-icon {
+    padding: 0px;
+    margin-bottom: 1.1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.35s;
+}
+
+.about-icon img {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.icon-1:hover {
+    background-color: rgba(18, 157, 71, 0.643);
+}
+
+.icon-2:hover {
+    background-color: rgba(253, 176, 64, 0.643);
+}
+
+.icon-3:hover {
+    background-color: rgb(241, 83, 55, 0.643);
+}
+
+.icon-4:hover {
+    background-color: rgb(114, 46, 139, 0.643);
+}
+
+.icon-5:hover {
+    background-color: rgba(243, 148, 190, 0.643);
+}
+
+.icon-6:hover {
+    background-color: rgba(253, 226, 70, 0.582);
+}
+
+.icon-1:hover .carousel-fade .carousel-item {
+    z-index: 0 !important;
+}
+
+#carouselExampleFade {
+    width: 80%;
+}
+
+.carousel-fade .carousel-control-next-icon,
+.carousel-fade .carousel-control-prev-icon {
+    filter: invert(1) grayscale(100);
 }
 
 
@@ -236,7 +301,7 @@ body {
 }
 
 .contact-main {
-    height: 420px;
+    height: 58vh;
 }
 
 .shape-divider {
@@ -462,7 +527,7 @@ body {
 }
 
 .warning-div{
-    width: 50%;
+    width: 55%;
     display: flex;
     justify-content: start;
 }
