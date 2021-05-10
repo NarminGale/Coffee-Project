@@ -680,6 +680,9 @@ footer ul {
     .nav-panel {
         justify-content: start;
     }
+}
+
+@media screen and (max-width: 767px) {
     .form-inner .form-element {
         width: 90%;
     }
