@@ -29,8 +29,7 @@ $('.common-input').keyup(function(e) {
     } else if ($(this).is('#message-textarea')) {
         check('#message-textarea', '.message-form');
     }
-
-    if ($('#name-input').val().trim() != '' && $('#number-input').val().trim() != '' && $('#email-input').val().trim() != '' && $('#message-textarea').val().trim() != ''){
+    if ($('#name-input').val().trim() != '' && $('#number-input').val().trim() != '' && $('#email-input').val().trim() != '' && $('#message-textarea').val().trim() != '') {
         $('.warning-div').remove();
     }
 });
@@ -51,3 +50,11 @@ function correctCase() {
     $('.form-element i').css('color', '#000');
     $('.warning-div').remove();
 }
+
+$('.about-icon').on('click',function(){
+    var color = $(this).css('background-color');
+    $('.about-us').css('background',`linear-gradient(0deg, rgb(255, 255, 255), ${color} 15%, rgb(255, 255, 255))`);
+    var id = $(this).data('id');
+    $('.carousel-item').removeClass('active');
+    $(`#item-${id}`).addClass('active');
+});

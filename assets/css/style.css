@@ -294,7 +294,7 @@ body {
 
 .section-title {
     font-size: 2.5rem;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     text-align: center;
     margin-bottom: 4rem;
     font-weight: 500;
@@ -324,7 +324,7 @@ body {
 .criterias {
     padding-left: 3rem;
     padding-right: 3rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .criterias ul li {
@@ -437,17 +437,19 @@ body {
 .contact-boxes {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .contact-box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30%;
-    height: 210px;
-    /* padding: 100px; */
+    /* width: 30%; */
+    height: 30vh;
+    /* padding: 10px; */
     text-align: center;
     background: transparent;
     border: 1px solid #c7a17a;
@@ -490,7 +492,7 @@ body {
 }
 
 .contact-3 {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 3.5em;
 }
@@ -519,7 +521,7 @@ body {
 .form-inner .form-element {
     display: flex;
     flex-direction: row;
-    width: 60%;
+    width: 65%;
     border: 1px solid #c7a17a;
     margin-bottom: 10px;
     border-radius: 8px;
@@ -596,13 +598,13 @@ body {
 
 .contact-rekvizit {
     padding-top: 3rem;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     text-align: center;
 }
 
 .contact-4 h1 {
     display: inline;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: 500;
     font-size: 40px;
     text-transform: capitalize;
@@ -619,10 +621,65 @@ footer {
     background-color: #caa681;
     width: 100%;
     margin-left: 0 !important;
+    padding: 3rem;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
 }
 
 footer h3 {
-    font-size: 14px;
+    font-size: 1rem;
+}
+
+footer ul li a:hover {
+    color: #d18d4e;
+}
+
+.fa-instagram {
+    font-size: 1.5rem;
+}
+
+.underline {
+    background-color: black;
+    width: 20%;
+    height: 2px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.copyright {
+    margin-top: 1rem;
+}
+
+footer ul li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+/* Carousel */
+/* 
+#carouselExampleFade{
+    transition: 0.2ms ease-in-out left;
+} */
+
+@media screen and (max-width: 767px) {
+    .form-inner .form-element {
+        width: 90%;
+    }
+    .contact-3 .form img {
+        width: 38vh;
+    }
 }
 
 @media screen and (min-width: 500px) {
