@@ -51,15 +51,15 @@ function correctCase() {
     $('.warning-div').remove();
 }
 
-$('.about-icon').on('click',function(){
+$('.about-icon').on('click', function() {
     var color = $(this).css('background-color');
-    $('.about-us').css('background',`linear-gradient(0deg, rgb(255, 255, 255), ${color} 15%, rgb(255, 255, 255))`);
+    $('.about-us').css('background', `linear-gradient(0deg, rgb(255, 255, 255), ${color} 15%, rgb(255, 255, 255))`);
     var id = $(this).data('id');
     $('.carousel-item').removeClass('active');
     $(`#item-${id}`).addClass('active');
 });
 
-$('.carousel').on('slid.bs.carousel', function(){
+$('.carousel').on('slid.bs.carousel', function() {
     var element_id = $('.carousel-item.active').attr('id');
     $(element_id).data('color');
     console.log(id);
