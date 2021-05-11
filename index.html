@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Главная</title>
+    <link rel="icon" href="./assets/images/logo.png">
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Rubik:wght@500&display=swap" rel="stylesheet" />
@@ -20,6 +21,7 @@
 </head>
 
 <body>
+    <!-- Navbar Menu -->
     <div class="flex-wrap">
         <div class="contentbody">
             <header id="header">
@@ -176,6 +178,33 @@
             </div>
         </div>
     </section>
+    <section class="row mb-5">
+        <div class="photos col-md-12 mx-auto">
+            <div class="section-title"><span>Везде будет к месту</span></div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="photos-div">
+                        <img src="./assets/images/photo1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="photos-div">
+                        <img src="./assets/images/photo2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="photos-div">
+                        <img src="./assets/images/photo3.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="photos-div">
+                        <img src="./assets/images/photo4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="compare container">
         <div class="row">
             <div class="section-title"><span>давайте сравним</span></div>
@@ -293,6 +322,32 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="question col-md-12 mx-auto">
+            <div class="section-title"><span style="font-family: 'Rubik' , sans-serif; font-weight: 800;">Остались вопросы?</span></div>
+            <div class="row d-flex align-items-center w-75 mx-auto">
+                <div class="col-lg-6">
+                    <div class="card card-body card-design">
+                        <p class="text-center my-3 mx-auto">Мы с удовольствием на них ответим.Заполните форму ниже и наш менеджер перезвонит Вам в течении 10 минут!</p>
+                        <form class="home-form mx-auto my-3">
+                            <img src="./assets/images/svg/user.svg" alt="">
+                            <input id="name-input" class="common-input form-control text-center my-2" type="text" placeholder="Ваше имя" />
+                            <img src="./assets/images/svg/email.svg" alt="">
+                            <input id="email-input" class="common-input form-control text-center my-2" type="email" placeholder="Введите ваш email" />
+                            <img src="./assets/images/svg/text.svg" alt="">
+                            <textarea id="message-textarea" class="common-input form-control text-center my-2" placeholder="Ваш запрос или предложение"></textarea>
+                            <button id="send-button" type="button" class="btn-home-form my-2">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="question-img">
+                        <img src="./assets/images/svg/question.svg" alt="">
                     </div>
                 </div>
             </div>
