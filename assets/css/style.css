@@ -668,10 +668,10 @@ footer ul {
 }
 
 /* Carousel */
-/* 
+
 #carouselExampleFade{
-    transition: 0.2ms ease-in-out left;
-} */
+    transition: 1s ease-in-out left;
+}
 
 @media screen and (max-width: 767px) {
     .form-inner .form-element {
