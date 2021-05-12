@@ -75,8 +75,7 @@ $('.about-icon').on('click', function () {
 })
 
 $('.carousel').on('slid.bs.carousel', function () {
-  var element_id = $('.carousel-item.active').attr('id')
-  $(element_id).data('color')
-  console.log(id)
-  console.log($(`.icon-${id}`).css('background'))
-})
+  console.log('ok');
+  var element_id = $('.carousel-item.active').attr('id');
+  console.log(element_id);
+  })
