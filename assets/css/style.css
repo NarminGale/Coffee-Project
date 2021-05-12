@@ -29,7 +29,7 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    z-index: 2;
+    z-index: 101;
     top: 0;
     left: 0;
     background-color: rgb(115, 171, 132);
@@ -124,7 +124,7 @@ body {
     /* background: rgba(242, 208, 164, 0.95); */
     background: rgba(115, 171, 132, 0.95);
     max-width: 100%;
-    z-index: 1;
+    z-index: 100;
 }
 
 .nav-panel1 {
@@ -464,7 +464,7 @@ footer ul {
     padding-left: 0;
 }
 
-.certificates {
+.products {
     width: 95%;
 }
 
@@ -857,9 +857,109 @@ footer ul {
 
 /* ABOUT */
 
+.about-main {
+    height: 72vh;
+}
+
 .container-about {
-    background-color: #c7a17a;
+    background-color: rgb(115, 171, 132);
     position: relative;
+}
+
+.about-page-1 {
+    padding-top: 4rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.about-page {
+    padding-top: 8rem;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.about-page-1 h1 {
+    font-family: 'Roboto';
+    display: inline;
+    font-weight: 500;
+    font-size: 50px;
+    text-transform: capitalize;
+    white-space: pre-wrap;
+    line-height: 72px;
+    margin-bottom: 2.5rem;
+    border-bottom: 3px solid#306d34;
+}
+
+.about-page-1>h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    font-size: 17px;
+    color: white;
+}
+
+.about-page-1 a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.about-page-1 a:hover {
+    text-decoration: none;
+    color: rgba(155, 229, 178, 0.918);
+}
+
+.wave-opacity {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-opacity svg {
+    position: relative;
+    display: block;
+    width: calc(109% + 1.3px);
+    height: 152px;
+}
+
+.wave-opacity .shape-fill {
+    fill: #FFFFFF;
+}
+
+.about-page-2 {
+    background: linear-gradient(rgb(255, 255, 255));
+}
+
+.about-page-2 .section-title {
+    font-family: 'Rubik', sans-serif;
+}
+
+.about-page-p {
+    font-family: 'Rubik', sans-serif;
+    color: #222;
+}
+
+.production {
+    width: 100%;
+}
+
+.carousel-inner-img {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-img {
+    width: 75%;
+    margin: 0 auto;
+    height: 60vh;
+}
+
+.carousel-img img {
+    margin: 0 auto;
+    width: 50%;
 }
 
 @media screen and (max-width: 992px) {
