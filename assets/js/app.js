@@ -75,7 +75,13 @@ $('.about-icon').on('click', function() {
 })
 
 $('.carousel').on('slid.bs.carousel', function() {
-    var element_id = $('.carousel-item.active').attr('id')
-    $(element_id).data('color')
-        // console.log($(`.icon-${id}`).css('background'))
-})
+    var element_id = $('.carousel-item.active').attr('id');
+    console.log(element_id);
+    var id = element_id[element_id.length-1];
+    console.log(id);
+    var color = $(`.icon-${id}`).data('color');
+    $('.about-us').css(
+        'background',
+        `linear-gradient(0deg, rgb(255, 255, 255), ${color} 15%, rgb(255, 255, 255))`
+    )
+});
