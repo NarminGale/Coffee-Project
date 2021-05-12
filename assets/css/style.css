@@ -337,7 +337,7 @@ body {
     z-index: 0 !important;
 }
 
-#carouselExampleFade {
+.carousel-home-page {
     width: 80%;
 }
 
@@ -579,7 +579,7 @@ footer ul {
 }
 
 .contact-main {
-    height: 58vh;
+    height: 65vh;
 }
 
 .shape-divider {
@@ -944,22 +944,6 @@ footer ul {
 
 .production {
     width: 100%;
-}
-
-.carousel-inner-img {
-    display: flex;
-    justify-content: center;
-}
-
-.carousel-img {
-    width: 75%;
-    margin: 0 auto;
-    height: 60vh;
-}
-
-.carousel-img img {
-    margin: 0 auto;
-    width: 50%;
 }
 
 @media screen and (max-width: 992px) {
