@@ -854,11 +854,10 @@ footer ul {
   padding-top: 17rem;
   padding-bottom: 10rem;
 }
-.tab-image {
-  height: 350px;
+.tab-images {
   width: 400px;
 }
-.tab-image img {
+.tab-images img {
   height: 100%;
   width: 100%;
   object-fit: contain;
@@ -867,29 +866,39 @@ footer ul {
   border: 1px solid black;
   font-size: 1.2rem;
 }
+.tab span {
+  color: rgb(243, 223, 113);
+}
 .tab-heading {
   font-size: 1.4rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   border: 1px solid black;
   text-align: center;
-  color: wheat;
+  color: #fffca1;
   background-color: rgb(76, 151, 98);
+  cursor: pointer;
 }
+
 .row .contents {
   padding: 1rem;
 }
 .tab-content {
   display: none;
 }
-.tab-content.active {
+.tab-images .row .tab-image {
+  display: none;
+}
+.tab-content.active,
+.tab-images .row .tab-image.active {
   display: block;
+}
+.tab-content ul {
+  padding-left: 0;
+  margin-bottom: 0;
 }
 .tab-content ul li {
   list-style: none;
   margin-bottom: 0.8rem;
-}
-.tab-content ul {
-  padding-left: 0;
 }
 .fa-envira {
   color: rgb(45, 129, 70);
@@ -916,6 +925,9 @@ footer ul {
   }
   .card-box {
     height: 270px;
+  }
+  .tab-images {
+    margin: 0 auto;
   }
 }
 

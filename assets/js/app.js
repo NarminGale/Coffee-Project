@@ -80,3 +80,25 @@ $('.carousel').on('slid.bs.carousel', function () {
   console.log(id)
   console.log($(`.icon-${id}`).css('background'))
 })
+
+// products
+
+$('.tab-heading').click(function () {
+  let dataName = $(this).data('name')
+  let tabContents = $('.tab-content')
+  tabContents.each(function (index, value) {
+    let dataValue = $(value).data('name')
+    $(value).removeClass('active')
+    if (dataValue === dataName) {
+      $(value).addClass('active')
+    }
+  })
+  let tabImages = $('.tab-image')
+  tabImages.each(function (index, value) {
+    let imageValue = $(value).data('name')
+    $(value).removeClass('active')
+    if (imageValue === dataName) {
+      $(value).addClass('active')
+    }
+  })
+})
