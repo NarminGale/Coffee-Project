@@ -1406,7 +1406,7 @@ footer ul {
 
 @media screen and (max-width: 1400px) {
     .tab-section-div{
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
 }
