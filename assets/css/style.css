@@ -883,7 +883,9 @@ footer ul {
   background-color: rgb(76, 151, 98);
   cursor: pointer;
 }
-
+.tab-heading:hover {
+  background-color: green;
+}
 .row .contents {
   padding: 1rem;
 }
