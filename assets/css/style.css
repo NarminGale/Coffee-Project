@@ -1024,14 +1024,15 @@ footer ul {
 }
 
 .products-search-inp {
+    color: #333;
     width: 30%;
     margin: 0 auto;
     height: 35px;
     font-size: 18px;
     text-align: center;
-    border: 1px solid rgb(45, 129, 70);
+    border: 2px solid rgb(45, 129, 70);
     outline: none;
-    box-shadow: 0 0 2px #222;
+    box-shadow: 0 0 2px #888;
 }
 
 input[type="search"]::-webkit-search-cancel-button {
@@ -1047,7 +1048,7 @@ input[type="search"]::-webkit-search-cancel-button {
     height: 35px;
     outline: none;
     border: 2px solid rgb(45, 129, 70);
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 .btn-search:hover {
