@@ -1248,6 +1248,14 @@ footer ul {
     color: white;
 }
 
+.tab-1{
+    border-top-left-radius: 12px;    
+}
+
+.tab-3{
+    border-top-right-radius: 12px;
+}
+
 .product-item .inside .contents p {
     font-size: 13px;
 }
@@ -1320,6 +1328,15 @@ footer ul {
     .products-width {
         width: 100%;
     }
+
+    .tab-1{
+        border-top-right-radius: 12px;
+    }
+
+    .tab-3{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -1384,5 +1401,12 @@ footer ul {
     /* Handle on hover */
      ::-webkit-scrollbar-thumb:hover {
         background: #333;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .tab-section-div{
+        flex-direction: column;
+        align-items: center;
     }
 }

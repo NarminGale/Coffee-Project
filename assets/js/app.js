@@ -136,8 +136,8 @@ $('.common-input-hm').keyup(function(e) {
             $('.warning-div').remove()
         }
     })
-    // products
 
+// products
 $('.tab-heading').click(function() {
     let dataName = $(this).data('name')
     let tabContents = $('.tab-content')
