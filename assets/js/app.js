@@ -125,19 +125,19 @@ function correctCase_hm() {
 
 // Ana səhifədəki validation üçün input daxil ediləndə yoxlanma
 $('.common-input-hm').keyup(function(e) {
-        if ($(this).is('#name-input-hm')) {
-            check_hm('#name-input-hm');
-        } else if ($(this).is('#email-input-hm')) {
-            check_hm('#email-input-hm');
-        } else if ($(this).is('#message-textarea-hm')) {
-            check_hm('#message-textarea-hm');
-        }
-        if ($('#name-input-hm').val().trim() != '' && $('#email-input-hm').val().trim() != '' && $('#message-textarea-hm').val().trim() != '') {
-            $('.warning-div').remove()
-        }
-    })
-    // products
+    if ($(this).is('#name-input-hm')) {
+        check_hm('#name-input-hm');
+    } else if ($(this).is('#email-input-hm')) {
+        check_hm('#email-input-hm');
+    } else if ($(this).is('#message-textarea-hm')) {
+        check_hm('#message-textarea-hm');
+    }
+    if ($('#name-input-hm').val().trim() != '' && $('#email-input-hm').val().trim() != '' && $('#message-textarea-hm').val().trim() != '') {
+        $('.warning-div').remove()
+    }
+})
 
+// products
 $('.tab-heading').click(function() {
     let dataName = $(this).data('name')
     let tabContents = $('.tab-content')
@@ -166,3 +166,17 @@ $('.buy').click(function() {
 $('.remove').click(function() {
     $('.bottom').removeClass("clicked");
 });
+
+$('#cart-button').on('click', function() {
+    $('#basket-pop-up').css('display', 'block');
+});
+
+$('.close').on('click', function() {
+    $('#basket-pop-up').css('display', 'none');
+})
+
+$(window).on('click', function(event) {
+    if (event.target == $('#basket-pop-up')) {
+        $('#basket-pop-up').css('display', 'none');
+    }
+})

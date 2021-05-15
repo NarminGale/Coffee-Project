@@ -64,6 +64,7 @@
                                         <a href="#" title="Call-back" class="d-none position-relative menu-nav call-number">+7 (499) 396-77-77</a>
                                         <a href="#" title="Call-back" class="position-relative menu-nav call-back">Обратный звонок <i class="fas fa-phone"></i></a>
                                     </li>
+                                
                                 </ul>
                             </div>
                         </nav>
@@ -82,8 +83,9 @@
         </div>
     </div>
 
-    <section class="tabs container" style="padding-top: 7rem;padding-bottom: 8rem;">
-        <div class="row">
+
+    <section class="tabs container">
+        <div class="row tab-section-div">
 
             <div class="col-lg-4 tab-images d-flex flex-column justify-content-center align-items-center">
                 <div class="row">
@@ -100,9 +102,9 @@
             </div>
             <div class="col-lg-8 tab tab-style">
                 <div id="#headings" class="row ">
-                    <div class="col-lg-4 tab-heading border-top-left" data-name="order"><span><i class="fas fa-shopping-basket"></i></span> Минимальный заказ</div>
-                    <div class="col-lg-4 tab-heading" data-name="deliver"><span><i class="fas fa-truck"></i></span> Доставка</div>
-                    <div class="col-lg-4 tab-heading border-top-right" data-name="payment"><span><i class="fas fa-credit-card"></i></span> Оплата</div>
+                    <div class="col-lg-4 tab-1 tab-heading" data-name="order"><span><i class="fas fa-shopping-basket"></i></span> Минимальный заказ</div>
+                    <div class="col-lg-4 tab-2 tab-heading" data-name="deliver"><span><i class="fas fa-truck"></i></span> Доставка</div>
+                    <div class="col-lg-4 tab-3 tab-heading" data-name="payment"><span><i class="fas fa-credit-card"></i></span> Оплата</div>
                 </div>
                 <div class="row contents">
                     <div class="col-lg-12 tab-content active" data-name="order">
@@ -147,6 +149,90 @@
                 <button class="btn-search">Поиск!</button>
             </div>
         </div>
+        <div class="basket">
+            <button id="cart-button"><i class="fas fa-shopping-cart"></i> Корзина</button>
+        </div>
+
+        <div id="basket-pop-up" class="popup">
+
+            <div class="popup-content">
+              <span class="close"><i class="fas fa-times"></i></span>
+              <div class="choosed-products-div d-flex justify-content-center align-content-center">
+                
+                <div class="choosed-item row">
+                        <img class="col-2" src="./assets/images/cups/cup1.png">
+                        <div class="col-3 choosed-item-name">Thyme Tea</div>
+                        <div class="col-2 choosed-item-price-div">
+                            <div class="choosed-item-price-title">Цена</div>
+                            <div class="choosed-item-price">100 $</div>
+                        </div>
+                        <div class="col-2 change-count-div">
+                            <div class="count">1</div>
+                            <div class="change-button">
+                                <button id="increment-count">+</button>
+                                <div class="seperater"></div>
+                                <button id="decrement-count">-</button>
+                            </div>
+                        </div>
+
+                        <div class="col-2 total-price-div">
+                            <div class="total-price-title">Общее</div>
+                            <div class="total-price">100 $</div>
+                        </div>
+                        <div class="col-1 remove-choosed-item"><i class="fas fa-times"></i></div>
+                    </div>
+
+                    <div class="choosed-item row">
+                        <img class="col-2" src="./assets/images/cups/cup1.png">
+                        <div class="col-3 choosed-item-name">Thyme Tea</div>
+                        <div class="col-2 choosed-item-price-div">
+                            <div class="choosed-item-price-title">Цена</div>
+                            <div class="choosed-item-price">100 $</div>
+                        </div>
+                        <div class="col-2 change-count-div">
+                            <div class="count">1</div>
+                            <div class="change-button">
+                                <button id="increment-count">+</button>
+                                <div class="seperater"></div>
+                                <button id="decrement-count">-</button>
+                            </div>
+                        </div>
+
+                        <div class="col-2 total-price-div">
+                            <div class="total-price-title">Общее</div>
+                            <div class="total-price">100 $</div>
+                        </div>
+                        <div class="col-1 remove-choosed-item"><i class="fas fa-times"></i></div>
+                    </div>
+
+                    <div class="choosed-item row">
+                        <img class="col-2" src="./assets/images/cups/cup1.png">
+                        <div class="col-3 choosed-item-name">Thyme Tea</div>
+                        <div class="col-2 choosed-item-price-div">
+                            <div class="choosed-item-price-title">Цена</div>
+                            <div class="choosed-item-price">100 $</div>
+                        </div>
+                        <div class="col-2 change-count-div">
+                            <div class="count">1</div>
+                            <div class="change-button">
+                                <button id="increment-count">+</button>
+                                <div class="seperater"></div>
+                                <button id="decrement-count">-</button>
+                            </div>
+                        </div>
+
+                        <div class="col-2 total-price-div">
+                            <div class="total-price-title">Общее</div>
+                            <div class="total-price">100 $</div>
+                        </div>
+                        <div class="col-1 remove-choosed-item"><i class="fas fa-times"></i></div>
+                    </div>
+
+              </div>
+            </div>
+          
+          </div>
+
         <div class="row products-width mx-auto">
             <div class="col-10 col-lg-4 col-sm-6 mx-auto my-3">
                 <div class="product-item product-item-1">
@@ -421,201 +507,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col-10 col-lg-4 col-sm-6 mx-auto my-3">
-                <div class="product-item product-item-8">
-                    <div class="container-products">
-                        <div class="top product-8"></div>
-                        <div class="bottom">
-                            <div class="left">
-                                <div class="details">
-                                    <h1>Green Tea</h1>
-                                    <p>100₽</p>
-                                </div>
-                                <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
-                            </div>
-                            <div class="right">
-                                <div class="done"><i class="material-icons">done</i></div>
-                                <div class="details">
-                                    <h1>Green Tea</h1>
-                                    <p>Added to your cart</p>
-                                </div>
-                                <div class="remove"><i class="material-icons">clear</i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inside">
-                        <div class="icon"><i class="material-icons">info_outline</i></div>
-                        <div class="contents">
-                            <table>
-                                <tr>
-                                    <th>Width</th>
-                                    <th>Height</th>
-                                </tr>
-                                <tr>
-                                    <td>3000mm</td>
-                                    <td>4000mm</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-10 col-lg-4 col-sm-6 mx-auto my-3">
-                <div class="product-item product-item-9">
-                    <div class="container-products">
-                        <div class="top product-9"></div>
-                        <div class="bottom">
-                            <div class="left">
-                                <div class="details">
-                                    <h1>Coffee Tea</h1>
-                                    <p>100₽</p>
-                                </div>
-                                <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
-                            </div>
-                            <div class="right">
-                                <div class="done"><i class="material-icons">done</i></div>
-                                <div class="details">
-                                    <h1>Coffee Tea</h1>
-                                    <p>Added to your cart</p>
-                                </div>
-                                <div class="remove"><i class="material-icons">clear</i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inside">
-                        <div class="icon"><i class="material-icons">info_outline</i></div>
-                        <div class="contents">
-                            <table>
-                                <tr>
-                                    <th>Width</th>
-                                    <th>Height</th>
-                                </tr>
-                                <tr>
-                                    <td>3000mm</td>
-                                    <td>4000mm</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-10 col-lg-4 col-sm-6 mx-auto my-3">
-                <div class="product-item product-item-10">
-                    <div class="container-products">
-                        <div class="top product-10"></div>
-                        <div class="bottom">
-                            <div class="left">
-                                <div class="details">
-                                    <h1>Cappuccino Tea</h1>
-                                    <p>100₽</p>
-                                </div>
-                                <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
-                            </div>
-                            <div class="right">
-                                <div class="done"><i class="material-icons">done</i></div>
-                                <div class="details">
-                                    <h1>Cappuccino Tea</h1>
-                                    <p>Added to your cart</p>
-                                </div>
-                                <div class="remove"><i class="material-icons">clear</i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inside">
-                        <div class="icon"><i class="material-icons">info_outline</i></div>
-                        <div class="contents">
-                            <table>
-                                <tr>
-                                    <th>Width</th>
-                                    <th>Height</th>
-                                </tr>
-                                <tr>
-                                    <td>3000mm</td>
-                                    <td>4000mm</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-10 col-lg-4 col-sm-6 mx-auto my-3">
-                <div class="product-item product-item-11">
-                    <div class="container-products">
-                        <div class="top product-11"></div>
-                        <div class="bottom">
-                            <div class="left">
-                                <div class="details">
-                                    <h1>Chocolate Tea</h1>
-                                    <p>100₽</p>
-                                </div>
-                                <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
-                            </div>
-                            <div class="right">
-                                <div class="done"><i class="material-icons">done</i></div>
-                                <div class="details">
-                                    <h1>Chocolate Tea</h1>
-                                    <p>Added to your cart</p>
-                                </div>
-                                <div class="remove"><i class="material-icons">clear</i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inside">
-                        <div class="icon"><i class="material-icons">info_outline</i></div>
-                        <div class="contents">
-                            <table>
-                                <tr>
-                                    <th>Width</th>
-                                    <th>Height</th>
-                                </tr>
-                                <tr>
-                                    <td>3000mm</td>
-                                    <td>4000mm</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-10 col-lg-4 col-sm-6 mx-auto my-3">
-                <div class="product-item product-item-12">
-                    <div class="container-products">
-                        <div class="top product-12"></div>
-                        <div class="bottom">
-                            <div class="left">
-                                <div class="details">
-                                    <h1>Milkshake Tea</h1>
-                                    <p>100₽</p>
-                                </div>
-                                <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
-                            </div>
-                            <div class="right">
-                                <div class="done"><i class="material-icons">done</i></div>
-                                <div class="details">
-                                    <h1>Milkshake Tea</h1>
-                                    <p>Added to your cart</p>
-                                </div>
-                                <div class="remove"><i class="material-icons">clear</i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inside">
-                        <div class="icon"><i class="material-icons">info_outline</i></div>
-                        <div class="contents">
-                            <table>
-                                <tr>
-                                    <th>Width</th>
-                                    <th>Height</th>
-                                </tr>
-                                <tr>
-                                    <td>3000mm</td>
-                                    <td>4000mm</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
         </div>
     </section>
@@ -653,10 +544,7 @@
                 <li><a href="#">Часы работы </a></li>
                 <li><a href="#">Доставка </a></li>
                 <li><a href="#">Оплата</a></li>
-                <li><a href="#">Задать вопрос </a></li>
-                <li><a href="#">Предложение оптовикам</a></li>
-                <li><a href="#">Получить оптовый прайс </a></li>
-                <li><a href="#">О компании </a></li>
+                <li><a href="#">Задать вопрос </a><5i>
             </ul>
         </div>
         <div class="col-md-3">
@@ -690,6 +578,11 @@
     <script src="./assets/js/preloader.js"></script>
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/scroll.js"></script>
+    <!-- FireBase -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script src="./assets/js/frback.js"></script>
+
 </body>
 
 </html>
