@@ -162,11 +162,11 @@ $('.tab-heading').click(function() {
 })
 
 $('.buy').click(function() {
-    $(this).addClass("clicked");
+    $('.bottom').addClass("clicked");
 });
 
 $('.remove').click(function() {
-    $(this).removeClass("clicked");
+    $('.bottom').removeClass("clicked");
 });
 
 // Səbətin PopUp kimi açılması
@@ -187,7 +187,7 @@ $(window).on('click', function(event) {
 
 // CallBack PopUp
 
-$('.call-back').on('click',function(){
+$('.call-back').on('click', function() {
     $('#callback-popup').css('display', 'block');
 });
 
@@ -204,7 +204,7 @@ $(window).on('click', function(event) {
 
 // CallBack Validation
 
-$('#callback-send-button').on('click',function(){
+$('#callback-send-button').on('click', function() {
 
     if ($('#callback-name-input').val().trim() == '') {
         $('#callback-name-input').css('border', '2px solid #f00');
@@ -218,7 +218,7 @@ $('#callback-send-button').on('click',function(){
         $('#callback-number-input').css('border', '2px solid rgb(45, 129, 70)');
     }
 
-    if($('#callback-name-input').val().trim() != '' && $('#callback-number-input').val().trim() != ''){
+    if ($('#callback-name-input').val().trim() != '' && $('#callback-number-input').val().trim() != '') {
         $('#callback-popup').css('display', 'none');
         $('#callback-name-input').val('')
         $('#callback-number-input').val('')
@@ -226,7 +226,7 @@ $('#callback-send-button').on('click',function(){
 
 });
 
-$('.callback-input').keyup(function(e){
+$('.callback-input').keyup(function(e) {
     if ($(this).val().trim() == '') {
         $(this).css('border', '2px solid #f00');
     } else {

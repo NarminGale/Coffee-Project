@@ -1050,6 +1050,7 @@ footer ul {
 }
 
 .products-search-inp {
+    border-radius: 8px;
     color: #333;
     width: 400px;
     margin: 0 auto;
@@ -1075,6 +1076,7 @@ input[type="search"]::-webkit-search-cancel-button {
     outline: none;
     border: 2px solid rgb(45, 129, 70);
     transition: 0.4s;
+    border-radius: 8px;
 }
 
 .btn-search:hover {
@@ -1418,9 +1420,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .basket-div {
     display: flex;
-    justify-content: flex-end;
-    width: 95%;
-    margin-bottom: 1.8rem;
+    justify-content: center;
 }
 
 #cart-button {
