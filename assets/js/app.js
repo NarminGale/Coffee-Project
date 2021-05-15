@@ -161,14 +161,6 @@ $('.tab-heading').click(function() {
 
 })
 
-$('.buy').on('click',function() {
-    $('.bottom').addClass("clicked");
-});
-
-$('.remove').on('click',function() {
-    $('.bottom').removeClass("clicked");
-});
-
 // Səbətin PopUp kimi açılması
 
 $('#cart-button').on('click', function() {
