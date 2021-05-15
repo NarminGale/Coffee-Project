@@ -294,6 +294,7 @@ body {
     /* background: radial-gradient(rgb(199, 161, 122), rgb(255, 255, 255) 70%); */
     background-size: cover;
     background-repeat: no-repeat;
+    transition: color 1s linear;
 }
 
 .about-icon {
@@ -302,6 +303,7 @@ body {
     border-radius: 12px;
     cursor: pointer;
     transition: 0.35s;
+    text-align: center;
 }
 
 .about-icon img {
@@ -1803,4 +1805,12 @@ input[type="search"]::-webkit-search-cancel-button {
         width: 80%;
     }
 
+}
+
+@media screen and (max-width: 770px) {
+
+    .about-icon > img{
+        width: 60%;
+    }
+    
 }

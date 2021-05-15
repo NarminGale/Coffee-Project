@@ -77,14 +77,16 @@ $('.about-icon').on('click', function() {
 })
 
 // Ana səhifədəki slayd dəyişəndə arxa fonunda ona uyğun dəyişməsi
-$('.carousel').on('slid.bs.carousel', function() {
+$('.homepage-carousel').on('slid.bs.carousel', function() {
     var element_id = $('.carousel-item.active').attr('id');
     var id = element_id[element_id.length - 1];
     var color = $(`.icon-${id}`).data('color');
+
     $('.about-us').css(
         'background',
         `linear-gradient(0deg, rgb(255, 255, 255), ${color} 15%, rgb(255, 255, 255))`
     )
+
 });
 
 // Ana səhifədəki validation
