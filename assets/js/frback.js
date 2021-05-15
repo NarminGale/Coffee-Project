@@ -15,12 +15,6 @@ var cups_ref = firebase.database().ref('cups');
 
 cups_ref.on('value', function(snapshot){
     $('.products-div').empty();
-    $('.products-div').append(`
-    <div class="basket-div pt-2 mt-2">
-                <div class="basket">
-                    <button id="cart-button"><i class="fas fa-shopping-cart"></i> Корзина</button>
-                </div>
-            </div>`);
     var data = snapshot.val();
     addItem(1,data.cup1.name,data.cup1.price);
     addItem(2,data.cup2.name,data.cup2.price);

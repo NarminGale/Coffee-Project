@@ -161,12 +161,12 @@ $('.tab-heading').click(function() {
 
 })
 
-$('.buy').click(function() {
-    $(this).addClass("clicked");
+$('.buy').on('click',function() {
+    $('.bottom').addClass("clicked");
 });
 
-$('.remove').click(function() {
-    $(this).removeClass("clicked");
+$('.remove').on('click',function() {
+    $('.bottom').removeClass("clicked");
 });
 
 // Səbətin PopUp kimi açılması
