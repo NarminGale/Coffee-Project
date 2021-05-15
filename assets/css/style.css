@@ -1431,7 +1431,8 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* Inside of Basket */
 
-.popup {
+.popup,
+.callback-popup-div {
     display: none;
     position: fixed;
     z-index: 1;
@@ -1445,7 +1446,8 @@ input[type="search"]::-webkit-search-cancel-button {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.popup-content {
+.popup-content,
+.callback-popup-content{
     position: relative;
     background-color: #fefefe;
     margin: auto;
@@ -1456,9 +1458,32 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 70%;
 }
 
-.popup-content>span {
+.callback-popup-content{
+    width: 30%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.callback-popup-content > label{
+    font-size: 20px;
+}
+
+.callback-popup-content > input{
+    outline: 0;
+    padding: 6px;
+    margin-bottom: 10px;
+    width: 70%;
+    border-radius: 16px;
+    border: 2px solid rgb(115, 171, 132);
+}
+
+.popup-content>span,
+.callback-popup-content>span {
     position: absolute;
     top: 0;
+    left: 10px;
 }
 
 .close,
@@ -1559,6 +1584,24 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 100%;
     height: 3px;
 }
+
+#callback-send-button{
+    width: 200px;
+    margin: 0 auto;
+    background: rgb(45, 129, 70);
+    font-family: "Rubik", sans-serif;
+    color: #fff;
+    height: 35px;
+    outline: none;
+    border: 2px solid rgb(45, 129, 70);
+    transition: 0.4s;
+}
+
+#callback-send-button:hover {
+    background: transparent;
+    color: rgb(45, 129, 70);
+}
+
 
 @media screen and (max-width: 992px) {
     .nav-panel1 {

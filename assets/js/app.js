@@ -167,6 +167,8 @@ $('.remove').click(function() {
     $('.bottom').removeClass("clicked");
 });
 
+// Səbətin PopUp kimi açılması
+
 $('#cart-button').on('click', function() {
     $('#basket-pop-up').css('display', 'block');
 });
@@ -180,3 +182,53 @@ $(window).on('click', function(event) {
         $('#basket-pop-up').css('display', 'none');
     }
 })
+
+// CallBack PopUp
+
+$('.call-back').on('click',function(){
+    $('#callback-popup').css('display', 'block');
+});
+
+
+$('.close').on('click', function() {
+    $('#callback-popup').css('display', 'none');
+})
+
+$(window).on('click', function(event) {
+    if (event.target == $('#basket-pop-up')) {
+        $('#callback-popup').css('display', 'none');
+    }
+})
+
+// CallBack Validation
+
+$('#callback-send-button').on('click',function(){
+
+    if ($('#callback-name-input').val().trim() == '') {
+        $('#callback-name-input').css('border', '2px solid #f00');
+    } else {
+        $('#callback-name-input').css('border', '2px solid rgb(45, 129, 70)');
+    }
+
+    if ($('#callback-number-input').val().trim() == '') {
+        $('#callback-number-input').css('border', '2px solid #f00');
+    } else {
+        $('#callback-number-input').css('border', '2px solid rgb(45, 129, 70)');
+    }
+
+    if($('#callback-name-input').val().trim() != '' && $('#callback-number-input').val().trim() != ''){
+        $('#callback-popup').css('display', 'none');
+        $('#callback-name-input').val('')
+        $('#callback-number-input').val('')
+    }
+
+});
+
+$('.callback-input').keyup(function(e){
+    if ($(this).val().trim() == '') {
+        $(this).css('border', '2px solid #f00');
+    } else {
+        $(this).css('border', '2px solid rgb(45, 129, 70)');
+    }
+
+});
