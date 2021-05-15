@@ -1828,6 +1828,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 @media screen and (max-width: 1200px) {
+    
     .callback-popup-content {
         width: 70%;
     }
@@ -1835,10 +1836,25 @@ input[type="search"]::-webkit-search-cancel-button {
     #callback-send-button {
         width: 80%;
     }
+
+    
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 900px) {
     .about-icon>img {
         width: 60%;
+    }
+
+    .popup-content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 70%;
+        width: auto;
+        justify-content: center;
+    }
+
+    .choosed-item{
+        flex-direction: column;
     }
 }
