@@ -166,3 +166,17 @@ $('.buy').click(function() {
 $('.remove').click(function() {
     $('.bottom').removeClass("clicked");
 });
+
+$('#cart-button').on('click',function(){
+    $('#basket-pop-up').css('display','block');
+});
+
+$('.close').on('click',function(){
+    $('#basket-pop-up').css('display','none');
+})
+
+$(window).on('click',function(event){
+    if (event.target == $('#basket-pop-up')) {
+        $('#basket-pop-up').css('display','none');
+      }
+})
