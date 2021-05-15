@@ -162,11 +162,11 @@ $('.tab-heading').click(function() {
 })
 
 $('.buy').click(function() {
-    $('.bottom').addClass("clicked");
+    $(this).addClass("clicked");
 });
 
 $('.remove').click(function() {
-    $('.bottom').removeClass("clicked");
+    $(this).removeClass("clicked");
 });
 
 // Səbətin PopUp kimi açılması
