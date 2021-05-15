@@ -1676,11 +1676,26 @@ input[type="search"]::-webkit-search-cancel-button {
 .business .btn,
 .business-certificate-content .btn {
     background-color: #ffb93f;
+    border: 2px solid #ffb93f;
+    outline: none;
+    box-shadow: none;
     width: 200px;
-    color: #366837;
+    color: #fff;
     font-weight: 500;
     text-align: center;
     margin: 0 auto;
+    transition: 0.4s;
+}
+
+.business .btn:hover,
+.business-certificate-content .btn:hover {
+    background-color: transparent;
+    color: #ffb93f;
+}
+
+.business .btn:active,
+.business-certificate-content .btn:active {
+    transform: translateY(-5%);
 }
 
 .business-certificate-content .btn {
