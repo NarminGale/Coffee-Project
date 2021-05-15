@@ -10,3 +10,10 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 var database = firebase.database();
+
+var cups_ref = firebase.database().ref('cups');
+
+cups_ref.once('value', function(snapshot){
+    var data = snapshot.val();
+    console.log(data);
+});
