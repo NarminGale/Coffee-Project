@@ -440,16 +440,17 @@ footer ul li a:hover {
 .fa-facebook,
 .fa-linkedin-in,
 .fa-twitter {
-  font-size: 1.4rem;
-  color: rgb(238, 238, 69);
-  margin-right: 0.5rem;
-  cursor: pointer;
+    font-size: 1.4rem;
+    color: rgb(238, 238, 69);
+    margin-right: 0.5rem;
+    cursor: pointer;
 }
+
 .fa-instagram:hover,
 .fa-facebook:hover,
 .fa-linkedin-in:hover,
 .fa-twitter:hover {
-  color: rgb(236, 236, 149);
+    color: rgb(236, 236, 149);
 }
 
 .underline {
@@ -465,9 +466,9 @@ footer ul li a:hover {
 }
 
 footer ul li {
-  list-style: none;
-  margin-bottom: 0.5rem;
-  cursor: pointer;
+    list-style: none;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
 }
 
 footer ul li a {
@@ -1049,6 +1050,7 @@ footer ul {
 }
 
 .products-search-inp {
+    border-radius: 8px;
     color: #333;
     width: 400px;
     margin: 0 auto;
@@ -1074,6 +1076,7 @@ input[type="search"]::-webkit-search-cancel-button {
     outline: none;
     border: 2px solid rgb(45, 129, 70);
     transition: 0.4s;
+    border-radius: 8px;
 }
 
 .btn-search:hover {
@@ -1417,9 +1420,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .basket-div {
     display: flex;
-    justify-content: flex-end;
-    width: 95%;
-    margin-bottom: 1.8rem;
+    justify-content: center;
 }
 
 #cart-button {
@@ -1427,20 +1428,21 @@ input[type="search"]::-webkit-search-cancel-button {
     border-radius: 6px;
     margin: 0 auto;
     background: rgb(45, 119, 129);
-    /* background: rgb(146, 135, 155); */
+    letter-spacing: 1px;
     font-family: "Rubik", sans-serif;
+    font-size: 18px;
     color: #fff;
     height: 35px;
     outline: none;
     border: 2px solid rgb(45, 119, 129);
-    /* border: 2px solid rgb(146, 135, 155); */
     transition: 0.4s;
+    padding-top: 0.7rem;
+    padding-bottom: 2rem;
 }
 
 #cart-button:hover {
     background: transparent;
     color: rgb(45, 119, 129);
-    /* color: rgb(146, 135, 155); */
 }
 
 
@@ -1463,7 +1465,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .popup-content,
-.callback-popup-content{
+.callback-popup-content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
@@ -1474,7 +1476,7 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 70%;
 }
 
-.callback-popup-content{
+.callback-popup-content {
     width: 30%;
     padding: 50px;
     display: flex;
@@ -1482,11 +1484,11 @@ input[type="search"]::-webkit-search-cancel-button {
     align-items: center;
 }
 
-.callback-popup-content > label{
+.callback-popup-content>label {
     font-size: 20px;
 }
 
-.callback-popup-content > input{
+.callback-popup-content>input {
     outline: 0;
     padding: 6px;
     margin-bottom: 10px;
@@ -1538,9 +1540,9 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .choosed-item>* {
     text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .choosed-item>img {
@@ -1603,85 +1605,119 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 100%;
     height: 3px;
 }
+
+
 /* Wholeseller */
+
+
 /* .business-img {
   height: 800px;
   width: 800px;
 } */
+
 .business-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.business {
-  padding-top: 7rem;
-  padding-bottom: 4rem;
-}
-.container-business {
-  padding-bottom: 4rem;
-}
-.business-content {
-  padding-top: 5rem;
-}
-.business-carousel .carousel-item img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
-.business-content h1 {
-  text-align: center;
-  width: 100%;
-  margin: 0 auto 2rem;
-  font-size: 2.1rem;
-  font-family: "Playfair Display", serif;
-  color: #366837;
-}
-.business-content ul li {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-}
-.business-content ul li p {
-  margin-left: 1rem;
-  display: inline-block;
-  color: gray;
-  font-size: 1.1rem;
-}
-.business-certificate-content {
-  font-size: 1.22rem;
-  letter-spacing: 0.02rem;
-  font-weight: 400;
-  color: #444;
-}
-.business-carousel-section {
-  margin-bottom: 7rem;
-}
-.business .btn,
-.business-certificate-content .btn {
-  background-color: #ffb93f;
-  width: 200px;
-  color: #366837;
-  font-weight: 500;
-  text-align: center;
-  margin: 0 auto;
-}
-.business-certificate-content .btn {
-  margin-top: 1rem;
-}
-.business-carousel {
-  width: 700px;
-  margin: 0 auto;
-}
-.business-content ul li i {
-  align-self: center;
-  font-size: 1.5rem;
-  color: #224122;
-}
-.business-carousel .carousel-item {
-  height: 388px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-#callback-send-button{
+.business {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+}
+
+.container-business {
+    padding-bottom: 4rem;
+}
+
+.business-content {
+    padding-top: 5rem;
+}
+
+.business-carousel .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.business-content h1 {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 2rem;
+    font-size: 2.1rem;
+    font-family: "Playfair Display", serif;
+    color: #366837;
+}
+
+.business-content ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.business-content ul li p {
+    margin-left: 1rem;
+    display: inline-block;
+    color: gray;
+    font-size: 1.1rem;
+}
+
+.business-certificate-content {
+    font-size: 1.22rem;
+    letter-spacing: 0.02rem;
+    font-weight: 400;
+    color: #444;
+}
+
+.business-carousel-section {
+    margin-bottom: 7rem;
+}
+
+.business .btn,
+.business-certificate-content .btn {
+    background-color: #ffb93f;
+    border: 2px solid #ffb93f;
+    outline: none;
+    box-shadow: none;
+    width: 200px;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+    transition: 0.4s;
+}
+
+.business .btn:hover,
+.business-certificate-content .btn:hover {
+    background-color: transparent;
+    color: #ffb93f;
+}
+
+.business .btn:active,
+.business-certificate-content .btn:active {
+    transform: translateY(-5%);
+}
+
+.business-certificate-content .btn {
+    margin-top: 1rem;
+}
+
+.business-carousel {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.business-content ul li i {
+    align-self: center;
+    font-size: 1.5rem;
+    color: #224122;
+}
+
+.business-carousel .carousel-item {
+    height: 388px;
+}
+
+#callback-send-button {
     width: 200px;
     margin: 0 auto;
     background: rgb(45, 129, 70);
@@ -1697,7 +1733,6 @@ input[type="search"]::-webkit-search-cancel-button {
     background: transparent;
     color: rgb(45, 129, 70);
 }
-
 
 @media screen and (max-width: 992px) {
     .nav-panel1 {
@@ -1755,11 +1790,9 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 @media screen and (max-width: 507px) {
-
-    .callback-popup-content{
+    .callback-popup-content {
         width: 70%;
     }
-
     .about-icon {
         width: 169px;
     }
@@ -1795,22 +1828,17 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 @media screen and (max-width: 1200px) {
-
-    .callback-popup-content{
+    .callback-popup-content {
         width: 70%;
     }
-
     .callback-input,
-    #callback-send-button{
+    #callback-send-button {
         width: 80%;
     }
-
 }
 
 @media screen and (max-width: 770px) {
-
-    .about-icon > img{
+    .about-icon>img {
         width: 60%;
     }
-    
 }
