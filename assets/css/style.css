@@ -1734,6 +1734,11 @@ input[type="search"]::-webkit-search-cancel-button {
     color: rgb(45, 129, 70);
 }
 
+.slogan-div > img{
+    width: 30%;
+    border-radius: 100px;
+}
+
 @media screen and (max-width: 992px) {
     .nav-panel1 {
         display: flex;
@@ -1754,6 +1759,16 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 @media screen and (max-width: 767px) {
+
+    .slogan-div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slogan-div > img{
+        width: 60%;
+    }
+
     .form-inner .form-element {
         width: 90%;
     }
