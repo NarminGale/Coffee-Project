@@ -1737,6 +1737,11 @@ input[type="search"]::-webkit-search-cancel-button {
 .slogan-div > img{
     width: 30%;
     border-radius: 100px;
+    margin-top: 12px;
+}
+
+.stuff-img{
+    background: rgb(41, 41, 41);
 }
 
 @media screen and (max-width: 992px) {
