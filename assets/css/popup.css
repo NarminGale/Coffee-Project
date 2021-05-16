@@ -109,8 +109,8 @@
 
 .login-popup .box .form .close {
   position: absolute;
-  right: 10px;
-  top: 0px;
+  right: 20px;
+  top: 10px;
   font-size: 30px;
   cursor: pointer;
 }
