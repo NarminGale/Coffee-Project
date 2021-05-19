@@ -11,7 +11,7 @@ $('.about-icon').on('click', function() {
 })
 
 // Ana səhifədəki slayd dəyişəndə arxa fonunda ona uyğun dəyişməsi
-$('.homepage-carousel').on('slid.bs.carousel', function() {
+$('.homepage-carousel').on('slid.bs.carousel', function(e) {
     var element_id = $('.carousel-item.active').attr('id');
     var id = element_id[element_id.length - 1];
     var color = $(`.icon-${id}`).data('color');
@@ -23,7 +23,7 @@ $('.homepage-carousel').on('slid.bs.carousel', function() {
 
 });
 
-// products
+// Products
 $('.tab-heading').click(function() {
     let dataName = $(this).data('name')
     let tabContents = $('.tab-content')
@@ -77,3 +77,12 @@ $(window).on('click', function(event) {
         $('#callback-popup').css('display', 'none');
     }
 })
+
+var images_array = ["./assets/images/cups/cup-main.png","./assets/images/cups/cup1.png","./assets/images/cups/cup2.png","./assets/images/cups/cup3.png","./assets/images/cups/cup4.png","./assets/images/cups/cup5.png","./assets/images/cups/cup6.png"]
+var index = 0;
+
+setInterval(function () {     
+    $('.header-cup-image').attr('src',images_array[index]);
+    index++;
+    if(index == images_array.length-1) index = 0;
+},5000);
