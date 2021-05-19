@@ -477,7 +477,7 @@ footer ul li a {
 }
 
 footer ul {
-    padding-left: 0;
+    padding-left: 0 !important;
 }
 
 .products {
@@ -503,10 +503,10 @@ footer ul {
     /* margin-top: 10%; */
     border-radius: 50%;
     width: 23px !important;
-    height: 2px !important;
+    height: 3px !important;
     background-color: #fff !important;
     background-clip: unset !important;
-    margin-right: 5px !important;
+    /* margin-right: 5px !important; */
 }
 
 .carousel-indicators .active {
@@ -1741,13 +1741,13 @@ input[type="search"]::-webkit-search-cancel-button {
     color: rgb(45, 129, 70);
 }
 
-.slogan-div > img{
+.slogan-div>img {
     width: 30%;
     border-radius: 100px;
     margin-top: 12px;
 }
 
-.stuff-img{
+.stuff-img {
     background: rgb(41, 41, 41);
 }
 
@@ -1771,16 +1771,13 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 @media screen and (max-width: 767px) {
-
-    .slogan-div{
+    .slogan-div {
         flex-direction: column;
         align-items: center;
     }
-
-    .slogan-div > img{
+    .slogan-div>img {
         width: 60%;
     }
-
     .form-inner .form-element {
         width: 90%;
     }
