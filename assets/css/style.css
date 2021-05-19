@@ -236,6 +236,7 @@ body {
     padding-top: 8rem;
     font-family: "Playfair Display", serif;
     text-align: center;
+    align-items: center;
 }
 
 .content-1 {
@@ -262,6 +263,10 @@ body {
 
 .content .image img {
     object-fit: cover;
+}
+
+.header-cup-image{
+    width: 100%;
 }
 
 .home-button {
@@ -1750,6 +1755,19 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 @media screen and (max-width: 992px) {
+
+    .content{
+        flex-direction: column;
+    }
+
+    .container-home{
+        height: 135vh;
+    }
+
+    .header-cup-image{
+        margin-top: 50px;
+    }
+
     .nav-panel1 {
         display: flex;
         justify-content: center;
@@ -1853,6 +1871,11 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 @media screen and (max-width: 1200px) {
+
+    .header-cup{
+        width: 350px;
+    }
+
     .callback-popup-content {
         width: 50%;
     }
