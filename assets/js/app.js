@@ -62,14 +62,14 @@ $(window).on('click', function(event) {
     }
 })
 
-var images_array = ["./assets/images/cups/cup-main.png","./assets/images/cups/cup1.png","./assets/images/cups/cup2.png","./assets/images/cups/cup3.png","./assets/images/cups/cup4.png","./assets/images/cups/cup5.png","./assets/images/cups/cup6.png"]
+var images_array = ["./assets/images/cups/cup-main.png", "./assets/images/cups/cup1.png", "./assets/images/cups/cup2.png", "./assets/images/cups/cup3.png", "./assets/images/cups/cup4.png", "./assets/images/cups/cup5.png", "./assets/images/cups/cup6.png"]
 var index = 0;
 
-setInterval(function () {     
-    $('.header-cup-image').attr('src',images_array[index]);
+setInterval(function() {
+    $('.header-cup-image').attr('src', images_array[index]);
     index++;
-    if(index == images_array.length-1) index = 0;
-},5000);
+    if (index == images_array.length - 1) index = 0;
+}, 5000);
 
 // Səbətin PopUp kimi açılması
 
@@ -83,6 +83,6 @@ $('.close').on('click', function() {
 
 $(window).on('click', function(event) {
     if ($('#basket-pop-up').is(event.target)) {
-    $('#basket-pop-up').css('display', 'none');
+        $('#basket-pop-up').css('display', 'none');
     }
 })
