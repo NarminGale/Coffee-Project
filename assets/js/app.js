@@ -45,22 +45,6 @@ $('.tab-heading').click(function() {
 
 })
 
-// Səbətin PopUp kimi açılması
-
-$('#cart-button').on('click', function() {
-    $('#basket-pop-up').css('display', 'block');
-});
-
-$('.close').on('click', function() {
-    $('#basket-pop-up').css('display', 'none');
-})
-
-$(window).on('click', function(event) {
-    if (event.target == $('#basket-pop-up')) {
-        $('#basket-pop-up').css('display', 'none');
-    }
-})
-
 // CallBack PopUp
 
 $('.call-back').on('click', function() {
@@ -73,7 +57,7 @@ $('.close').on('click', function() {
 })
 
 $(window).on('click', function(event) {
-    if (event.target == $('#basket-pop-up')) {
+    if ($('#callback-popup').is(event.target)) {
         $('#callback-popup').css('display', 'none');
     }
 })
@@ -86,3 +70,19 @@ setInterval(function () {
     index++;
     if(index == images_array.length-1) index = 0;
 },5000);
+
+// Səbətin PopUp kimi açılması
+
+$('#cart-button').on('click', function() {
+    $('#basket-pop-up').css('display', 'block');
+});
+
+$('.close').on('click', function() {
+    $('#basket-pop-up').css('display', 'none');
+})
+
+$(window).on('click', function(event) {
+    if ($('#basket-pop-up').is(event.target)) {
+    $('#basket-pop-up').css('display', 'none');
+    }
+})

@@ -1467,7 +1467,6 @@ input[type="search"]::-webkit-search-cancel-button {
     z-index: 102;
 }
 
-.popup-content,
 .callback-popup-content {
     position: relative;
     background-color: #fefefe;
@@ -1512,8 +1511,7 @@ input[type="search"]::-webkit-search-cancel-button {
     left: 10px;
 }
 
-.close,
-.remove-choosed-item {
+.close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
@@ -1521,99 +1519,75 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .close:hover,
-.close:focus,
-.remove-choosed-item:hover,
-.remove-choosed-item:focus {
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
 
-.choosed-products-div {
+.popup-content{
+    top: 60px;
+    position: relative;
+    border: 5px solid rgb(115, 171, 132);
+    border-radius: 20px;
+    padding: 50px;
+    margin: 0 auto;
+    min-width: 50%;
+    width: fit-content;
+    height: fit-content;
+    max-width: 60%;
+    background: #fff;
+}
+
+#choosed-items-div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
 .choosed-item {
-    border: 2px solid rgb(115, 171, 132);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 5px solid rgb(115, 171, 132);
     border-radius: 20px;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 4px auto;
+    width: 30%;
+    margin: 5px;
 }
 
-.choosed-item>* {
+.choosed-item > *{
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.choosed-item>img {
+.choosed-item > img{
     width: 150px;
-    height: 150px;
 }
 
-.choosed-item-name {
-    font-size: 26px;
-}
-
-.choosed-item-price-div,
-.total-price-div {
+.change-count-div{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
-.choosed-item-price-title,
-.total-price-title {
-    color: #666;
-    font-size: 20px;
-}
-
-.choosed-item-price,
-.total-price {
-    font-size: 26px;
-}
-
-.change-count-div {
-    border: 3px solid rgb(115, 171, 132);
-    border-radius: 12px;
+.buttons-div{
+    border-top: 1px solid #999;
     display: flex;
     flex-direction: row;
-    width: fit-content;
-    padding: 0;
-}
-
-.change-button {
-    border-left: 3px solid rgb(115, 171, 132);
-    display: flex;
-    flex-direction: column;
-}
-
-.count {
-    display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
+    font-size: 26px;
 }
 
-#increment-count,
-#decrement-count {
-    border: 0;
+.increment-count,
+.decrement-count{
     background: #fff;
-    margin: 5px 10px;
+    height: 100%;
+    border: 0;
+    padding: 6px;
 }
-
-.seperater {
-    background: rgb(115, 171, 132);
-    width: 100%;
-    height: 3px;
-}
-
 
 /* Wholeseller */
 
@@ -1752,6 +1726,12 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .stuff-img{
     background: rgb(41, 41, 41);
+}
+
+.empty-title-div{
+    color: #999;
+    padding: 16px;
+    font-size: 26px;
 }
 
 @media screen and (max-width: 992px) {
@@ -1896,8 +1876,5 @@ input[type="search"]::-webkit-search-cancel-button {
         max-width: 70%;
         width: auto;
         justify-content: center;
-    }
-    .choosed-item {
-        flex-direction: column;
     }
 }
