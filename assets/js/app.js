@@ -11,11 +11,7 @@ $('.about-icon').on('click', function() {
 })
 
 // Ana səhifədəki slayd dəyişəndə arxa fonunda ona uyğun dəyişməsi
-<<<<<<< HEAD
 $('.homepage-carousel').on('slid.bs.carousel', function(e) {
-=======
-$('.homepage-carousel').on('slid.bs.carousel', function() {
->>>>>>> a2ef5fbc8530f1e245e33efbac3dbedb1e46d77a
     var element_id = $('.carousel-item.active').attr('id');
     var id = element_id[element_id.length - 1];
     var color = $(`.icon-${id}`).data('color');
@@ -27,11 +23,7 @@ $('.homepage-carousel').on('slid.bs.carousel', function() {
 
 });
 
-<<<<<<< HEAD
 // Products
-=======
-// products
->>>>>>> a2ef5fbc8530f1e245e33efbac3dbedb1e46d77a
 $('.tab-heading').click(function() {
     let dataName = $(this).data('name')
     let tabContents = $('.tab-content')
@@ -53,7 +45,6 @@ $('.tab-heading').click(function() {
 
 })
 
-<<<<<<< HEAD
 // CallBack PopUp
 
 $('.call-back').on('click', function() {
@@ -93,37 +84,5 @@ $('.close').on('click', function() {
 $(window).on('click', function(event) {
     if ($('#basket-pop-up').is(event.target)) {
     $('#basket-pop-up').css('display', 'none');
-=======
-// Səbətin PopUp kimi açılması
-
-$('#cart-button').on('click', function() {
-    $('#basket-pop-up').css('display', 'block');
-});
-
-$('.close').on('click', function() {
-    $('#basket-pop-up').css('display', 'none');
-})
-
-$(window).on('click', function(event) {
-    if (event.target == $('#basket-pop-up')) {
-        $('#basket-pop-up').css('display', 'none');
-    }
-})
-
-// CallBack PopUp
-
-$('.call-back').on('click', function() {
-    $('#callback-popup').css('display', 'block');
-});
-
-
-$('.close').on('click', function() {
-    $('#callback-popup').css('display', 'none');
-})
-
-$(window).on('click', function(event) {
-    if (event.target == $('#basket-pop-up')) {
-        $('#callback-popup').css('display', 'none');
->>>>>>> a2ef5fbc8530f1e245e33efbac3dbedb1e46d77a
     }
 })
