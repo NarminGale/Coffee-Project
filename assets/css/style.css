@@ -200,13 +200,13 @@ body {
 }
 
 .basket-link {
-    border-radius: 8px;
+    border-radius: 22px;
     cursor: pointer;
     font-size: 1rem;
     text-decoration: none;
     text-align: center;
     font-family: "Rubik", sans-serif;
-    padding: 15px 20px;
+    padding: 15px 25px;
     border: 2px solid rgb(45, 119, 129);
     background: rgb(45, 119, 129);
     color: #fff;
@@ -1782,7 +1782,7 @@ input[type="search"]::-webkit-search-cancel-button {
     }
     .nav-item-basket .basket-link {
         font-size: 1.05rem;
-        padding: 10px 5px;
+        padding: 10px 15px;
     }
 }
 
@@ -1839,7 +1839,7 @@ input[type="search"]::-webkit-search-cancel-button {
     }
     .nav-item-basket {
         margin: 10px 0 !important;
-        padding: 10px 0px !important;
+        padding: 5px !important;
         margin-left: 0 !important;
     }
     .nav-item a {
