@@ -1816,14 +1816,29 @@ input[type="search"]::-webkit-search-cancel-button {
         align-items: flex-start;
     }
     .nav-sect-3 {
-        align-items: flex-start;
+        align-items: center;
         margin-top: 15px;
     }
+    .show {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        width: 100%;
+    }
+    .nav-sect-3 .nav-item {
+        padding: 5px 0;
+        margin: 10px 0;
+    }
     .nav-item-call {
+        margin: 10px 0 !important;
         padding: 10px 0px !important;
         margin-left: 0 !important;
     }
     .nav-item-basket {
+        margin: 10px 0 !important;
         padding: 10px 0px !important;
         margin-left: 0 !important;
     }
