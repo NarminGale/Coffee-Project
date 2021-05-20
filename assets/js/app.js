@@ -1,5 +1,5 @@
 // Xırda stəkanlara basanda arxa fonun fən fincan şəklinin ona uyğun dəyişməsi
-$('.about-icon').on('click',function(){
+$('.about-icon').on('click', function() {
     var color = $(this).data('color');
     var id = $(this).data('id');
     console.log(color);
@@ -11,7 +11,7 @@ $('.about-icon').on('click',function(){
         , rgb(255, 255, 255), ${color} 15%, rgb(255, 255, 255))`);
     var image = $(`.icon-${id}`).children('img').attr('src');
     console.log(image);
-    $('.home-image').children('img').attr('src',`${image}`);
+    $('.home-image').children('img').attr('src', `${image}`);
 })
 
 // Products
