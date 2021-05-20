@@ -1762,6 +1762,15 @@ input[type="search"]::-webkit-search-cancel-button {
     font-size: 26px;
 }
 
+.home-image{
+    display: flex;
+    justify-content: center;
+}
+
+.home-image > img{
+    width: 350px;
+}
+
 @media screen and (max-width:1366px) {
     .ticket {
         display: none;

@@ -1,27 +1,18 @@
-// Ana səhifədə kiçik stəkanlardan hansına basılsa, o stəkan slide-da görünür və arxa fonda ona uyğun dəyişir
-$('.about-icon').on('click', function() {
-    var color = $(this).css('background-color')
+// Xırda stəkanlara basanda arxa fonun fən fincan şəklinin ona uyğun dəyişməsi
+$('.about-icon').on('click',function(){
+    var color = $(this).data('color');
+    var id = $(this).data('id');
+    console.log(color);
+    console.log(id);
     $('.about-us').css(
         'background',
-        `linear-gradient(0deg, rgb(255, 255, 255), ${color} 15%, rgb(255, 255, 255))`
-    )
-    var id = $(this).data('id')
-    $('.carousel-item').removeClass('active')
-    $(`#item-${id}`).addClass('active')
+        `linear-gradient( 
+        0deg
+        , rgb(255, 255, 255), ${color} 15%, rgb(255, 255, 255))`);
+    var image = $(`.icon-${id}`).children('img').attr('src');
+    console.log(image);
+    $('.home-image').children('img').attr('src',`${image}`);
 })
-
-// Ana səhifədəki slayd dəyişəndə arxa fonunda ona uyğun dəyişməsi
-$('.homepage-carousel').on('slid.bs.carousel', function(e) {
-    var element_id = $('.carousel-item.active').attr('id');
-    var id = element_id[element_id.length - 1];
-    var color = $(`.icon-${id}`).data('color');
-
-    $('.about-us').css(
-        'background',
-        `linear-gradient(0deg, rgb(255, 255, 255), ${color} 15%, rgb(255, 255, 255))`
-    )
-
-});
 
 // Products
 $('.tab-heading').click(function() {
