@@ -2003,6 +2003,35 @@ input[type="search"]::-webkit-search-cancel-button {
     text-transform: capitalize;
 }
 
+.wave-opacity-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-opacity-2 svg {
+    position: relative;
+    display: block;
+    width: calc(109% + 1.3px);
+    height: 152px;
+}
+
+.wave-opacity-2 .shape-fill {
+    fill: #ffffff;
+}
+
+.product-buy-page-2 {
+    background: linear-gradient(rgb(255, 255, 255));
+}
+
+.product-buy-page-2 .section-title {
+    font-family: "Rubik", sans-serif;
+}
+
 @media screen and (max-width:1400px) {
     .nav-item a {
         font-size: 1.05rem;
