@@ -1939,9 +1939,6 @@ input[type="search"]::-webkit-search-cancel-button {
     .container-home {
         height: 100vh;
     }
-    .image {
-        display: none;
-    }
     .content-1 {
         display: flex;
         flex-direction: column;
