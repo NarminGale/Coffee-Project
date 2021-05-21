@@ -1778,8 +1778,8 @@ input[type="search"]::-webkit-search-cancel-button {
     cursor: pointer;
     /* justify-content: center; */
     position: fixed;
-    top: 260px;
-    right: -200px;
+    top: 263px;
+    right: -210px;
     z-index: 100;
     transform: translate(-50%, -50%);
     width: auto;
@@ -1925,6 +1925,82 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .minicart--item a:hover {
     text-decoration: underline;
+}
+
+
+/* =================== */
+
+
+/* Prdouct Buy Page */
+
+.product-buy-main {
+    height: 72vh;
+}
+
+.container-product-buy {
+    background-color: rgb(115, 171, 132);
+    position: relative;
+}
+
+.product-buy-page-1 {
+    padding-top: 4rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.product-buy-page {
+    padding-top: 8rem;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+}
+
+.product-buy-page-1 h1 {
+    font-family: "Roboto";
+    display: inline;
+    font-weight: 500;
+    font-size: 50px;
+    text-transform: capitalize;
+    white-space: pre-wrap;
+    line-height: 72px;
+    margin-bottom: 2.5rem;
+    border-bottom: 3px solid#306d34;
+}
+
+.product-buy-page-1>h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    font-size: 17px;
+    color: white;
+}
+
+.product-buy-page-1 a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.product-buy-page-1 a:hover {
+    text-decoration: none;
+    color: rgba(155, 229, 178, 0.918);
+}
+
+.section-title-buy {
+    font-size: 2.5rem;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 500;
+    color: rgb(45, 119, 129);
+}
+
+.section-title-buy span {
+    font-family: 'Rubik', sans-serif;
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgb(45, 119, 129);
+}
+
+.section-title-buy::first-letter {
+    text-transform: capitalize;
 }
 
 @media screen and (max-width:1400px) {
