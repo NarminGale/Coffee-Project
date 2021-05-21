@@ -64,8 +64,15 @@ setInterval(function() {
 
 // Səbətin hover olanda açılması
 
-$('#cart-button').hover(function(){
+$('#cart-button').hover(function() {
 
-},function(){
+}, function() {
 
+})
+
+$('#cart-button').mouseover(function() {
+    $('.minicart').css('display', "block")
+})
+$('.cart-items').mouseleave(function() {
+    $('.minicart').css('display', "none")
 })

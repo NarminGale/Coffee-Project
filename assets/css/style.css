@@ -1765,21 +1765,46 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* Minicart */
 
+
+/* .cart-items {
+    top: 100%;
+    width: auto;
+    padding: 25px 0 0;
+    transition: 0.5s;
+} */
+
 .minicart {
+    display: none;
+    cursor: pointer;
     /* justify-content: center; */
     position: fixed;
-    top: 250px;
-    right: -230px;
-    z-index: 200;
+    top: 260px;
+    right: -200px;
+    z-index: 100;
     transform: translate(-50%, -50%);
     width: auto;
     height: auto;
     padding: 10px 15px;
     background: rgba(255, 255, 255, 0.973);
     border-radius: 6px;
-    -webkit-box-shadow: 0px 30px 130px -8px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 30px 130px -8px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 30px 130px -8px rgba(0, 0, 0, 0.25);
+    /* -webkit-box-shadow: 0px 30px 130px -8px rgba(0, 0, 0, 0.25); */
+    /* -moz-box-shadow: 0px 30px 130px -8px rgba(0, 0, 0, 0.25); */
+    box-shadow: 0px 0px 10px rgba(172, 172, 172, 0.719);
+}
+
+.minicart.show {
+    display: block;
+}
+
+.minicart::before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    right: 110px;
+    display: inline-block;
+    border-bottom: 8px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
 }
 
 .minicart--item>.img-and-name,
@@ -1846,6 +1871,11 @@ input[type="search"]::-webkit-search-cancel-button {
 .minicart--item-remove i {
     font-size: 1.1rem;
     color: rgb(179, 3, 3);
+    transition: 0.3s;
+}
+
+.minicart--item-remove i:hover {
+    color: rgb(49, 0, 0);
 }
 
 .minicart--item .title {
