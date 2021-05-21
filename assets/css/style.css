@@ -1317,6 +1317,8 @@ input[type="search"]::-webkit-search-cancel-button {
     background: #bc3b59;
     transition: transform 0.5s, background 0.5s;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .product-item .container-products .bottom .right .remove:hover {
