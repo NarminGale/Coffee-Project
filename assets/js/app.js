@@ -38,7 +38,7 @@ $('.tab-heading').click(function() {
 
 // CallBack PopUp
 
-$('.call-back').on('click', function() {
+$('.call-back-link').on('click', function() {
     $('#callback-popup').css('display', 'block');
 });
 
@@ -68,7 +68,24 @@ $('#cart-button').mouseover(function() {
     $('.minicart').css('display', "block")
 })
 $('.cart-items').mouseleave(function() {
-    $('.minicart').css('display', "none")
-})
+        $('.minicart').css('display', "none")
+    })
 
-// Mobil rejimdə kənara basılanda səbətin yox olması
+// Etinat Filtered
+
+$('.first-circle-icon').hover(function() {
+    $('.circle').removeClass('active')
+    $('.first-circle').addClass('active')
+})
+$('.second-circle-icon').hover(function() {
+    $('.circle').removeClass('active')
+    $('.second-circle').addClass('active')
+})
+$('.third-circle-icon').hover(function() {
+    $('.circle').removeClass('active')
+    $('.third-circle').addClass('active')
+})
+$('.fourth-circle-icon').hover(function() {
+    $('.circle').removeClass('active')
+    $('.fourth-circle').addClass('active')
+})
