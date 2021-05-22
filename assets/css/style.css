@@ -1944,7 +1944,7 @@ input[type="search"]::-webkit-search-cancel-button {
 /* filtered cup */
 
 .filtered-cup-section {
-    border-radius: 30px;
+    border-radius: 32px;
     background: linear-gradient( rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/white-bg.jpg") center/cover fixed no-repeat;
     padding: 0rem 3rem;
 }
