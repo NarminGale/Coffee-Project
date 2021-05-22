@@ -64,15 +64,11 @@ setInterval(function() {
 
 // Səbətin hover olanda açılması
 
-$('#cart-button').hover(function() {
-
-}, function() {
-
-})
-
 $('#cart-button').mouseover(function() {
     $('.minicart').css('display', "block")
 })
 $('.cart-items').mouseleave(function() {
     $('.minicart').css('display', "none")
 })
+
+// Mobil rejimdə kənara basılanda səbətin yox olması
