@@ -258,6 +258,10 @@ body {
     color: rgb(45, 119, 129);
 }
 
+#cart-button-phone {
+    display: none;
+}
+
 
 /* ==================================== */
 
@@ -2162,6 +2166,12 @@ input[type="search"]::-webkit-search-cancel-button {
         width: 100%;
         height: 100%;
         object-fit: contain;
+    }
+    #cart-button-phone {
+        display: block;
+    }
+    #cart-button {
+        display: none;
     }
 }
 
