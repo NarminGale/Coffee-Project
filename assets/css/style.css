@@ -2043,6 +2043,12 @@ input[type="search"]::-webkit-search-cancel-button {
     .home-button:first-of-type {
         margin-right: 0;
     }
+    .tab-1 {
+        border-top-right-radius: 12px;
+    }
+    .tab-3 {
+        border-top-right-radius: 0px;
+    }
 }
 
 @media screen and (max-width: 767px) {
