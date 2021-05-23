@@ -90,4 +90,18 @@ $('.fourth-circle-icon').hover(function() {
     $('.fourth-circle').addClass('active')
 })
 
-//
+// Confirm PopUp un görünməsi
+
+$('.btn-payment').on('click',function(){
+    $('#payment-popup').css('display','block');
+})
+
+$('.close').on('click',function(){
+    $('#payment-popup').css('display','none');
+})
+
+$(window).on('click', function(event) {
+    if ($('#payment-popup').is(event.target)) {
+        $('#payment-popup').css('display', 'none');
+    }
+})
