@@ -182,7 +182,7 @@ $('#confirm-button').on('click', function () {
         confirm_correctCase();
         $('.payment-popup-content').html('Поздравления !');
         $('.payment-popup-content').css('text-align','center');
-        $('.payment-popup-content').css('top','50%');
+        $('.payment-popup-content').css('top','30%');
     }
 });
 
