@@ -126,6 +126,11 @@
     height: 120px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+}
+
+.payment-total-price{
+    font-size: 28px;
 }
 
 .item:nth-child(2) {
@@ -146,7 +151,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-top: 30px;
     margin-right: 20px;
 }
 
@@ -223,7 +227,6 @@
 /* Product Quantity */
 
 .quantity {
-    padding-top: 20px;
     margin-right: 60px;
 }
 
@@ -265,7 +268,6 @@ input:focus {
 
 .total-price {
     width: 83px;
-    padding-top: 27px;
     text-align: center;
     font-size: 19px;
     color: #43484D;
@@ -344,6 +346,7 @@ input:focus {
     }
     .buttons {
         margin-right: 0px;
+        padding-top: 20px;
     }
     .buttons i {
         font-size: 35px;
@@ -351,5 +354,10 @@ input:focus {
     .item {
         padding: 0;
         padding-bottom: 5px;
+    }
+
+    .quantity,
+    .total-price{
+        padding-top: 10px;
     }
 }
