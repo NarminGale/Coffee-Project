@@ -1852,6 +1852,7 @@ input[type="search"]::-webkit-search-cancel-button {
     border: 2px solid rgb(115, 171, 132);
     color: rgb(115, 171, 132);
     outline: none;
+    transition: 0.3s;
 }
 
 #minicart--input:hover {
