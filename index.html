@@ -66,7 +66,7 @@
                                                 У вас
                                                 <span class="minicart--item-count" id="cart-items-all-count">2</span> товара в корзине</div>
                                             <hr>
-                                            <ul>
+                                            <ul class="minicart--ul">
                                                 <li class="minicart--item">
                                                     <div class="img-and-name">
                                                         <img src="./assets/images/cups/cup4.png" class="choosed--item-image">
@@ -94,6 +94,22 @@
                                                         <span style="font-weight: 600;">Цена товара:<br></span><span id="cart-item-price">10</span> ₽</p>
                                                     <p class="minicart--item-price">
                                                         <span style="font-weight: 600;">Общее:<br></span><span id="cart-item-total-price">10</span>₽ (<span id="cart-item-count">1</span>x)</p>
+                                                    <p class="minicart--item-remove">
+                                                        <a href="#"><i class="fa fa-trash-o"></i></a>
+                                                    </p>
+                                                </li>
+                                                <hr>
+                                                <li class="minicart--item">
+                                                    <div class="img-and-name">
+                                                        <img src="./assets/images/cups/cup6.png" class="choosed--item-image">
+                                                        <h1 class="title">Quince Tea Cup</h1>
+                                                    </div>
+                                                    <p class="choosed--items-count">
+                                                        <span style="font-weight: 600;">Число:<br></span><span id="cart-item-count">3</span></p>
+                                                    <p class="choosed--items-price">
+                                                        <span style="font-weight: 600;">Цена товара:<br></span><span id="cart-item-price">10</span> ₽</p>
+                                                    <p class="minicart--item-price">
+                                                        <span style="font-weight: 600;">Общее:<br></span><span id="cart-item-total-price">30</span>₽ (<span id="cart-item-count">3</span>x)</p>
                                                     <p class="minicart--item-remove">
                                                         <a href="#"><i class="fa fa-trash-o"></i></a>
                                                     </p>
@@ -145,7 +161,7 @@
 
     <main class="container-fluid container-home">
         <div id="etinat-stakan" class="row content row ms-0 me-0 px-5">
-            <div class="col-md-7 content-1" style="z-index: 1;">
+            <div class="col-md-7 col-sm-8 content-1 mx-auto" style="z-index: 1;">
                 <h1>начни день с<br><span style="color: #306d34;">ETINAT</span>-стакан</h1>
                 <p style="font-weight: 600;">Просто добавь кипяток!</p>
                 <button type="button" class="home-button" onclick="window.location.href='./wholeseller.html#offer'">
@@ -154,40 +170,26 @@
             <div class="col-md-5 image header-cup" style="z-index: 1;">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="3000">
-                            <img class="ticket" src="./assets/images/ticket.png" alt="" />
-                            <span class="ticket-span"><i class="fas fa-ruble-sign fa-sm"></i> 10</span>
-                            <img src="./assets/images/cups/cup-main.png" class="d-block w-100" alt="...">
+                        <div class="carousel-item active" data-bs-interval="3500">
+                            <img src="./assets/images/cups-ticket/cup-main.png" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img class="ticket" src="./assets/images/ticket.png" alt="" />
-                            <span class="ticket-span"><i class="fas fa-ruble-sign fa-sm"></i> 10</span>
-                            <img src="./assets/images/cups/cup1.png" class="d-block w-100" alt="...">
+                        <div class="carousel-item" data-bs-interval="3500">
+                            <img src="./assets/images/cups-ticket/cup1.png" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img class="ticket" src="./assets/images/ticket.png" alt="" />
-                            <span class="ticket-span"><i class="fas fa-ruble-sign fa-sm"></i> 10</span>
-                            <img src="./assets/images/cups/cup2.png" class="d-block w-100" alt="...">
+                        <div class="carousel-item" data-bs-interval="3500">
+                            <img src="./assets/images/cups-ticket/cup2.png" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img class="ticket" src="./assets/images/ticket.png" alt="" />
-                            <span class="ticket-span"><i class="fas fa-ruble-sign fa-sm"></i> 10</span>
-                            <img src="./assets/images/cups/cup3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-item" data-bs-interval="3500">
+                            <img src="./assets/images/cups-ticket/cup3.png" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img class="ticket" src="./assets/images/ticket.png" alt="" />
-                            <span class="ticket-span"><i class="fas fa-ruble-sign fa-sm"></i> 10</span>
-                            <img src="./assets/images/cups/cup4.png" class="d-block w-100" alt="...">
+                        <div class="carousel-item" data-bs-interval="3500">
+                            <img src="./assets/images/cups-ticket/cup4.png" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img class="ticket" src="./assets/images/ticket.png" alt="" />
-                            <span class="ticket-span"><i class="fas fa-ruble-sign fa-sm"></i> 10</span>
-                            <img src="./assets/images/cups/cup5.png" class="d-block w-100" alt="...">
+                        <div class="carousel-item" data-bs-interval="3500">
+                            <img src="./assets/images/cups-ticket/cup5.png" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img class="ticket" src="./assets/images/ticket.png" alt="" />
-                            <span class="ticket-span"><i class="fas fa-ruble-sign fa-sm"></i> 10</span>
-                            <img src="./assets/images/cups/cup6.png" class="d-block w-100" alt="...">
+                        <div class="carousel-item" data-bs-interval="3500">
+                            <img src="./assets/images/cups-ticket/cup6.png" class="d-block w-100" alt="...">
                         </div>
                     </div>
                 </div>
@@ -325,33 +327,33 @@
         <div class="photos col-md-12 mx-auto ">
             <div class="section-title "><span>Везде будет к месту</span></div>
             <div class="row ">
-                <div class="col-lg-2 ">
-                    <div class="photos-div ">
+                <div class="col-lg-2 col-sm-4">
+                    <div class="photos-div">
                         <img src="./assets/images/photo1.png " alt=" " />
                     </div>
                 </div>
-                <div class="col-lg-2 ">
+                <div class="col-lg-2 col-sm-4">
                     <div class="photos-div ">
                         <img src="./assets/images/photo2.png " alt=" " />
                     </div>
                 </div>
-                <div class="col-lg-2 ">
-                    <div class="photos-div ">
+                <div class="col-lg-2 col-sm-4">
+                    <div class="photos-div">
                         <img src="./assets/images/photo6.png " alt=" " />
                     </div>
                 </div>
-                <div class="col-lg-2 ">
-                    <div class="photos-div ">
+                <div class="col-lg-2 col-sm-4">
+                    <div class="photos-div">
                         <img src="./assets/images/photo5.png " alt=" " />
                     </div>
                 </div>
-                <div class="col-lg-2 ">
-                    <div class="photos-div ">
+                <div class="col-lg-2 col-sm-4">
+                    <div class="photos-div">
                         <img src="./assets/images/photo3.png " alt=" " />
                     </div>
                 </div>
-                <div class="col-lg-2 ">
-                    <div class="photos-div ">
+                <div class="col-lg-2 col-sm-4">
+                    <div class="photos-div">
                         <img src="./assets/images/photo4.png " alt=" " />
                     </div>
                 </div>
