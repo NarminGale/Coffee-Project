@@ -129,8 +129,11 @@
     align-items: center;
 }
 
-.payment-total-price{
-    font-size: 28px;
+.item-total {
+    font-size: 26px;
+    color: rgb(45, 119, 129);
+    display: flex;
+    justify-content: space-between;
 }
 
 .item:nth-child(2) {
@@ -165,14 +168,20 @@
 } */
 
 .delete-btn i {
+    border-radius: 4px;
+    border: 1px solid rgba(160, 0, 0, 0.637);
+    background: transparent;
+    padding: 2px 4px;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 22px;
     color: rgba(160, 0, 0, 0.637);
     transition: 0.3s;
 }
 
 .delete-btn i:hover {
-    color: rgba(255, 0, 0, 0.637);
+    color: rgb(255, 255, 255);
+    background: rgba(160, 0, 0, 0.637);
+    /* color: rgba(255, 0, 0, 0.637); */
 }
 
 @keyframes animate {
@@ -234,7 +243,7 @@
     -webkit-appearance: none;
     border: none;
     text-align: center;
-    width: 32px;
+    width: 40px;
     font-size: 16px;
     color: #43484D;
     font-weight: 300;
@@ -263,9 +272,10 @@ input:focus {
     outline: 0;
 }
 
+
 /* PopUp */
 
-#payment-popup{
+#payment-popup {
     display: none;
     position: fixed;
     left: 0;
@@ -278,7 +288,7 @@ input:focus {
     z-index: 200;
 }
 
-.payment-popup-content{
+.payment-popup-content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
@@ -289,23 +299,23 @@ input:focus {
     width: 50%;
 }
 
-.payment-popup-input-div{
+.payment-popup-input-div {
     display: flex;
     flex-direction: column;
     width: 80%;
     margin: 0 auto 16px auto;
 }
 
-.payment-popup-input-div > input,
-.payment-popup-input-div > textarea,
-.payment-popup-input-div > select{
+.payment-popup-input-div>input,
+.payment-popup-input-div>textarea,
+.payment-popup-input-div>select {
     border: 2px solid rgb(115, 171, 132);
     border-radius: 12px;
     padding: 10px;
     outline: 0;
 }
 
-#confirm-button{
+#confirm-button {
     width: 60%;
     margin: 0 auto;
     border-radius: 12px;
@@ -316,10 +326,11 @@ input:focus {
     color: #fff;
 }
 
-#confirm-button:hover{
+#confirm-button:hover {
     background: #fff;
     color: rgb(115, 171, 132);
 }
+
 
 /* Total Price */
 
@@ -375,7 +386,7 @@ input:focus {
 /* Responsive */
 
 @media (max-width: 1000px) {
-    .payment-popup-content{
+    .payment-popup-content {
         width: 90%;
     }
 }
@@ -418,9 +429,13 @@ input:focus {
         padding: 0;
         padding-bottom: 5px;
     }
-
     .quantity,
-    .total-price{
+    .total-price {
         padding-top: 10px;
+    }
+    .delete-btn i {
+        border-radius: 4px;
+        padding: 2px 4px;
+        font-size: 20px;
     }
 }
